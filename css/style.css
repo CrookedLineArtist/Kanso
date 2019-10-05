@@ -1,1 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700|Rubik:300,400&display=swap");
+body,
+html {
+  color: #252525;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
 
+h4 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
+  font-size: 1.1em;
+}
+
+h4 small {
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 1.25em;
+  }
+}
+
+.bg {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.05;
+}
+
+@media screen and (max-width: 700px) {
+  .bg {
+    height: 100vw;
+    background-size: cover;
+    background-position: top left;
+    rotate: 180deg;
+  }
+}
+
+.m-100 {
+  margin-top: -50vw;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.flex img {
+  width: 100vw;
+}
+
+@media screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wide-view {
+    display: none;
+  }
+}
+
+.homzhub {
+  background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.law {
+  background: linear-gradient(55deg, #5181D6, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.motion {
+  background: linear-gradient(55deg, #E2A851, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.duct {
+  background: linear-gradient(55deg, #3FA887, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.shop {
+  background: linear-gradient(55deg, #FF5757, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.white {
+  background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.grid-container div {
+  padding: 1em;
+}
+
+#discover {
+  padding: 0px;
+}
+
+#discover .grid-container div {
+  color: #ebebeb;
+  padding-top: 120px;
+}
+
+.process {
+  margin-top: -600px;
+  margin-bottom: 200px;
+  padding: 30px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.scale-1 {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.scale-1:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.02);
+  /* Safari 3-8 */
+  transform: scale(1.02);
+  z-index: 20;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: capitalize;
+  background: #f1f1f100;
+  position: absolute;
+  width: 100vw;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    padding: 40px;
+    z-index: 3;
+    width: 100%;
+    display: block;
+  }
+}
+
+nav ul :hover ::after {
+  content: " - ";
+}
+
+nav ul a :hover {
+  color: #FF5757;
+}
+
+nav ul li {
+  padding: 0 20px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul li {
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: right;
+    border-bottom: #252525 dotted 0.5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

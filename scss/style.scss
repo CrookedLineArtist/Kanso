@@ -5,6 +5,19 @@
 
 // @import 'root', 'nav','footer';
 
+// wide-view or mobile  depending on screen size
+
+$trigger-screen: 700px;
+@media screen and (min-width: $trigger-screen) {
+    .mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: $trigger-screen) {
+    .wide-view {
+        display: none;
+    }
+}
 
 
 @mixin linear-gradient-alt($alt-color) {
@@ -340,3 +353,12 @@ nav{
       letter-spacing: 0em;
     }
   }
+
+
+.law-desktop{
+  width: 100vw;
+}
+
+.law-mobile{
+  width: 100vw;
+}

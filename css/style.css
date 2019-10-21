@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap");
+@media screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wide-view {
+    display: none;
+  }
+}
+
 .homzhub {
   background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
@@ -318,5 +330,13 @@ nav .nav-item ul li:last-child {
 
 #approach h2 {
   letter-spacing: 0em;
+}
+
+.law-desktop {
+  width: 100vw;
+}
+
+.law-mobile {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

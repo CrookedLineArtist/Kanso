@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap');
+
+
+// font-family: 'Barlow Semi Condensed', sans-serif;
+
+// @import 'root', 'nav','footer';
+
+
+
+@mixin linear-gradient-alt($alt-color) {
+  background: linear-gradient(55deg, $alt-color, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+.homzhub {
+  @include linear-gradient-alt(#64A2FF);
+
+}
+
+.law {
+  @include linear-gradient-alt(#5181D6);
+}
+
+.motion {
+  @include linear-gradient-alt(#E2A851);
+}
+
+.duct {
+  @include linear-gradient-alt(#3FA887);
+}
+
+.shop {
+  @include linear-gradient-alt(#FF5757);
+}
+
+.white {
+  @include linear-gradient-alt(rgb(204, 204, 204));
+}
+
+#discover {
+
+  h2{
+    margin-bottom: 100px;
+  }
+
+  .grid-container {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: 12em 12em;
+    div {
+        padding: 1em;
+    }
+  }
+}
+
+
+
+
+
+
+// animation
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(page-trasition) {
+  0% {
+    height: 30vmin;
+  }
+
+  100% {
+    height: 80vh;
+  }
+}
+
+//   @include animation('page-trasition 0.5s  ease-in 1');
+
+
+
+
+
+
+
+
+
+
+// root
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  //border: 1px grey solid;
+  transition: all 1s ease;
+
+}
+
+body,
+html {
+  box-sizing: border-box;
+  font-size: 1.1em;
+
+}
+
+
+p {
+  font-family: 'Barlow', sans-serif;
+  max-width: 440px;
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+h2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 33px;
+  max-width: 600px;
+  margin: 1em 0;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 1.2em;
+
+}
+h4{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 200;
+}
+
+
+.index {
+
+
+  .bg{
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      z-index: -1;
+      background: url(../img/bg.png)   no-repeat;
+      background-size: cover;
+      background-position: right center;
+      opacity: 0.2;
+      }
+
+
+  }
+
+  #banner{
+    height: 80vmin;
+  }
+
+ 
+  section {
+    width: 100vmax;
+    height: 60vmin;
+    transition-property: height;
+    transition-delay: 0.2s;
+    transition-duration: 0.6s;
+
+    &:hover {
+      top: 0%;
+      height: 90vmin;
+
+    }
+
+    margin: 0 auto;
+    // background-color: rgb(186, 186, 186);
+    // border:2px solid red;
+    position: relative;
+
+    .container {
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // background: aqua;
+    }
+  }
+}
+
+
+
+// footer
+.contact {
+  display: grid;
+  grid-template-columns: 300px auto;
+  snap{
+    position: relative;
+    width: 40px;
+    margin-right: 30px;
+
+    svg{
+      position: absolute;
+      width: 20px;
+      top: 3px;
+    }
+  }
+
+
+}
+
+
+
+
+// duct case study
+@import 'duct';
+
+
+
+// nav
+nav{
+  width:100%;
+  
+  position: fixed;
+  top:0;
+  z-index: 4;
+  .container{
+
+    display: flex;
+    justify-content: space-between;
+    svg{
+      width: 30px;
+      padding: 30px;
+    }
+
+  }
+
+  .nav-item{
+    // background-color: #F52D01;
+    // height: 100vh;
+    // min-width: 300px;
+    // position: fixed;
+    // z-index: 1;
+    // top: 0;
+    // right: 0;
+    // overflow-x: hidden;
+    // transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.961);
+    border-radius: 5px;
+
+    ul{
+      padding: 30px 30px 0px 30px ;
+      list-style-type: none;
+      a {
+        text-decoration: none; /* no underline */
+        color: black;
+
+
+      }
+
+
+      li{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: small;
+        // color: whitesmoke;
+        padding: 0 25px;
+        display: inline-block;
+        
+        background-color: transparent;
+        &:hover::before{
+          content: ' ';
+          position: absolute;
+          background-color: #F52D01;
+          margin-left: -15px;
+          width: 3px;
+          height: 18px;
+          border-radius: 20px 0;
+
+          
+
+        }
+
+        &:last-child{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// #services
+#services , #process {
+  svg{
+    min-width: 1100px;
+    padding-top: 50px;
+  }
+  .graph{
+
+    overflow-x: auto;
+
+  }
+
+  }
+
+  #we{
+    margin-top: 200px;
+  }
+
+  #approach{
+    h2{
+      letter-spacing: 0em;
+    }
+  }

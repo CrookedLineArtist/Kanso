@@ -1,0 +1,17 @@
+configaration
+
+# pug 
+    pug dev --out ./ -w -P
+
+# scss 
+        "liveSassCompile.settings.formats":[
+
+        // More Complex
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ]
+
+    in extention setting .json

@@ -1,0 +1,65 @@
+// case 1
+
+.case-1{
+
+    *{
+      //border: black 1px solid;
+    }
+  
+    .inside-box{
+
+      margin-top: 10vmin;
+      @media only screen and (max-width: 800px) {
+        margin-top: 20vmax;
+      }
+  
+  
+      .page{
+        margin: 5vmin;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        @media only screen and (max-width: 800px) {
+          grid-template-columns: auto ;
+          padding: 8vmin 1vmin ;  
+        }
+        div{
+          padding: 8vmin ;  
+          align-self: center;
+          @media only screen and (max-width: 800px) {
+            padding: 1.8vmin ;  
+          }
+
+        }
+        .screen{
+          img{
+            width: 95%;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 30px 30px 2px #F8F8F8;
+            border: 1px rgb(238, 238, 238) solid;
+          }
+        }
+      }
+  
+      .duct-img{
+        grid-template-columns: 1fr 1fr;
+        @media only screen and (max-width: 900px) {
+          grid-template-columns: auto ;
+        }
+        .screen{
+          align-self: center;
+          img{
+            max-width: 30vmax;
+            @media only screen and (max-width: 900px) {
+              max-width: 100vmin;
+            }
+          }
+        }
+  
+      }
+    }
+  
+  
+  
+  
+  }

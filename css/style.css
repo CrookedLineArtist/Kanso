@@ -1,85 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700|Rubik:300,400&display=swap");
-body,
-html {
-  color: #252525;
-  margin: 0px;
-  padding: 0px;
-  font-size: 1em;
-}
-
-h4 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
-  line-height: 1.3em;
-  font-size: 1.1em;
-}
-
-h4 small {
-  font-weight: 300;
-}
-
-@media screen and (min-width: 1300px) {
-  html {
-    font-size: 1.25em;
-  }
-}
-
-.bg {
-  background-image: url(../img/bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vw;
-  position: absolute;
-  width: 100%;
-  z-index: -2;
-  opacity: 0.05;
-}
-
-@media screen and (max-width: 700px) {
-  .bg {
-    height: 100vw;
-    background-size: cover;
-    background-position: top left;
-    rotate: 180deg;
-  }
-}
-
-.m-100 {
-  margin-top: -50vw;
-}
-
-a {
-  text-decoration: none;
-  color: #252525;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-.container img {
-  width: 100%;
-}
-
-.flex img {
-  width: 100vw;
-}
-
-@media screen and (min-width: 700px) {
-  .mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .wide-view {
-    display: none;
-  }
-}
-
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap");
 .homzhub {
   background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
@@ -104,104 +23,300 @@ a {
   background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
 
-.grid-container {
+#discover h2 {
+  margin-bottom: 100px;
+}
+
+#discover .grid-container {
+  margin-top: 250px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-.grid-container div {
-  padding: 1em;
-}
-
-#discover {
-  padding: 0px;
+  -ms-grid-rows: 12em 12em;
+      grid-template-rows: 12em 12em;
 }
 
 #discover .grid-container div {
-  color: #ebebeb;
-  padding-top: 120px;
+  padding: 1em;
 }
 
-.process {
-  margin-top: -600px;
-  margin-bottom: 200px;
-  padding: 30px;
-  overflow: hidden;
-  overflow-x: auto;
+@-webkit-keyframes page-trasition {
+  0% {
+    height: 30vmin;
+  }
+  100% {
+    height: 80vh;
+  }
 }
 
-.scale-1 {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+@keyframes page-trasition {
+  0% {
+    height: 30vmin;
+  }
+  100% {
+    height: 80vh;
+  }
 }
 
-.scale-1:hover {
-  /* IE 9 */
-  -webkit-transform: scale(1.02);
-  /* Safari 3-8 */
-  transform: scale(1.02);
-  z-index: 20;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.1em;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  max-width: 440px;
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+h2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 33px;
+  max-width: 600px;
+  margin: 1em 0;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 1.2em;
+}
+
+h4 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 200;
+}
+
+.index .bg::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  background-position: right center;
+  opacity: 0.2;
+}
+
+.index #banner {
+  height: 80vmin;
+}
+
+.index section {
+  width: 100vmax;
+  height: 60vmin;
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  margin: 0 auto;
+  position: relative;
+}
+
+.index section:hover {
+  top: 0%;
+  height: 90vmin;
+}
+
+.index section .container {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+}
+
+.contact snap {
+  position: relative;
+  width: 40px;
+  margin-right: 30px;
+}
+
+.contact snap svg {
+  position: absolute;
+  width: 20px;
+  top: 3px;
+}
+
+.case-1 .inside-box {
+  margin-top: 10vmin;
+}
+
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box {
+    margin-top: 20vmax;
+  }
+}
+
+.case-1 .inside-box .page {
+  margin: 5vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box .page {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 8vmin 1vmin;
+  }
+}
+
+.case-1 .inside-box .page div {
+  padding: 8vmin;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box .page div {
+    padding: 1.8vmin;
+  }
+}
+
+.case-1 .inside-box .page .screen img {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 30px 30px 2px #F8F8F8;
+          box-shadow: 30px 30px 2px #F8F8F8;
+  border: 1px #eeeeee solid;
+}
+
+.case-1 .inside-box .duct-img {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px) {
+  .case-1 .inside-box .duct-img {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.case-1 .inside-box .duct-img .screen {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.case-1 .inside-box .duct-img .screen img {
+  max-width: 30vmax;
+}
+
+@media only screen and (max-width: 900px) {
+  .case-1 .inside-box .duct-img .screen img {
+    max-width: 100vmin;
+  }
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 1em;
-  padding-left: 1em;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  text-transform: capitalize;
-  background: #f1f1f100;
-  position: absolute;
-  width: 100vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
 }
 
-nav ul {
+nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+nav .container svg {
+  width: 30px;
+  padding: 30px;
+}
+
+nav .nav-item {
+  background-color: rgba(255, 255, 255, 0.961);
+  border-radius: 5px;
+}
+
+nav .nav-item ul {
+  padding: 30px 30px 0px 30px;
   list-style-type: none;
 }
 
-@media screen and (max-width: 700px) {
-  nav ul {
-    padding: 40px;
-    z-index: 3;
-    width: 100%;
-    display: block;
-  }
+nav .nav-item ul a {
+  text-decoration: none;
+  /* no underline */
+  color: black;
 }
 
-nav ul :hover ::after {
-  content: " - ";
+nav .nav-item ul li {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: small;
+  padding: 0 25px;
+  display: inline-block;
+  background-color: transparent;
 }
 
-nav ul a :hover {
-  color: #FF5757;
+nav .nav-item ul li:hover::before {
+  content: ' ';
+  position: absolute;
+  background-color: #F52D01;
+  margin-left: -15px;
+  width: 3px;
+  height: 18px;
+  border-radius: 20px 0;
 }
 
-nav ul li {
-  padding: 0 20px;
-  font-size: 0.9em;
+nav .nav-item ul li:last-child {
+  display: none;
 }
 
-@media screen and (max-width: 700px) {
-  nav ul li {
-    display: block;
-    padding: 15px;
-    margin: 0 auto;
-    text-align: right;
-    border-bottom: #252525 dotted 0.5px;
-  }
+#services svg, #process svg {
+  min-width: 1100px;
+  padding-top: 50px;
+}
+
+#services .graph, #process .graph {
+  overflow-x: auto;
+}
+
+#we {
+  margin-top: 200px;
+}
+
+#approach h2 {
+  letter-spacing: 0em;
 }
 /*# sourceMappingURL=style.css.map */

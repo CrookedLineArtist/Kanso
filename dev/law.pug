@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 html(lang="en")
     
-    include head.pug
+    include _include/head.pug
     body
 
-        include nav.pug
+        include _include/nav.pug
 
-        .wide-view
-            include law-desktop.pug
+        //- .wide-view
+        //-     include law/law-desktop.pug
 
-        .mobile
-            include law-mobile.pug
+        //- .mobile
+        //-     include law/law-mobile.pug
 
-        include footer.pug
+
+        picture.vw-100
+            source(media='(max-width: 700px)' srcset='./img/law-mobile.svg')
+            source(media='(min-width: 700px)'  srcset='./img/law-desktop.svg')
+            img(src='./img/kanso_design.png'  alt='law' )
+
+
+
+        include _include/footer.pug

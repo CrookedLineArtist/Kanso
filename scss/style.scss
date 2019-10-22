@@ -8,16 +8,31 @@
 // wide-view or mobile  depending on screen size
 
 $trigger-screen: 700px;
-@media screen and (min-width: $trigger-screen) {
-    .mobile {
-        display: none;
-    }
+
+.vw-100{
+  
+  margin: 0 auto;
+  svg{
+    width: 96vw;
+  }
 }
-@media screen and (max-width: $trigger-screen) {
-    .wide-view {
-        display: none;
-    }
+
+.mobile{
+  width: 100vw;
+  @media screen and (min-width: $trigger-screen) {
+    display: none;
 }
+}
+
+
+.wide-view{
+  width: 100vw;
+  @media screen and (max-width: $trigger-screen) {
+     
+    display: none;
+}
+}
+
 
 
 @mixin linear-gradient-alt($alt-color) {
@@ -355,10 +370,3 @@ nav{
   }
 
 
-.law-desktop{
-  width: 100vw;
-}
-
-.law-mobile{
-  width: 100vw;
-}

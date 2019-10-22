@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    
+    include _include/head.pug
+    body
+
+        include _include/nav.pug
+
+        //- .wide-view
+        //-     include home/home-desktop.pug
+
+        //- .mobile
+        //-     img(src="./img/home-mobile.svg", alt="", srcset="")
+
+        picture.vw-100
+
+            source(media='(max-width: 700px)' srcset='./img/home-mobile.svg')
+            source(media='(min-width: 700px)'  srcset='./img/home-desktop.svg')
+            img(src='./img/kanso_design.png'  alt='home' )
+
+
+
+        include _include/footer.pug

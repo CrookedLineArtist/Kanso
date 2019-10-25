@@ -1,8 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap");
+.vw-100 {
+  margin: 0 auto;
+}
+
+.vw-100 svg {
+  width: 96vw;
+}
+
+.mobile {
+  width: 100vw;
+}
+
 @media screen and (min-width: 700px) {
   .mobile {
     display: none;
   }
+}
+
+.wide-view {
+  width: 100vw;
 }
 
 @media screen and (max-width: 700px) {
@@ -85,6 +101,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.1em;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -118,7 +135,7 @@ h4 {
   content: "";
   position: absolute;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   top: 0%;
   left: 0%;
   z-index: -1;
@@ -134,20 +151,25 @@ h4 {
 
 .index section {
   width: 100vmax;
-  height: 60vmin;
+  height: 70vmin;
   -webkit-transition-property: height;
   transition-property: height;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
+  padding-top: 100px;
   margin: 0 auto;
   position: relative;
 }
 
-.index section:hover {
-  top: 0%;
-  height: 90vmin;
+@media screen and (max-width: 700px) {
+  .index section {
+    height: 80vh;
+  }
+  .index section:hover {
+    top: 10;
+  }
 }
 
 .index section .container {
@@ -259,6 +281,8 @@ nav {
   position: fixed;
   top: 0;
   z-index: 4;
+  background-color: rgba(255, 255, 255, 0.961);
+  border-radius: 5px;
 }
 
 nav .container {
@@ -273,11 +297,6 @@ nav .container {
 nav .container svg {
   width: 30px;
   padding: 30px;
-}
-
-nav .nav-item {
-  background-color: rgba(255, 255, 255, 0.961);
-  border-radius: 5px;
 }
 
 nav .nav-item ul {
@@ -315,12 +334,14 @@ nav .nav-item ul li:last-child {
   display: none;
 }
 
-#services svg, #process svg {
+#services svg,
+#process svg {
   min-width: 1100px;
   padding-top: 50px;
 }
 
-#services .graph, #process .graph {
+#services .graph,
+#process .graph {
   overflow-x: auto;
 }
 
@@ -332,11 +353,67 @@ nav .nav-item ul li:last-child {
   letter-spacing: 0em;
 }
 
-.law-desktop {
-  width: 100vw;
+.page-loaded {
+  visibility: hidden;
 }
 
-.law-mobile {
-  width: 100vw;
+.logo-loading {
+  padding: 50px;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.circle {
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  border-radius: 2px;
+  margin: 0px 5px;
+  -webkit-animation: wave 1.5s ease-in-out infinite;
+          animation: wave 1.5s ease-in-out infinite;
+}
+
+.circle .circle-1 {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.circle .circle-2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.circle .circle-3 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+@-webkit-keyframes wave {
+  30% {
+    background-color: #f0f0f0;
+  }
+  0%, 60%, 100% {
+    background-color: #dadada;
+  }
+}
+
+@keyframes wave {
+  30% {
+    background-color: #f0f0f0;
+  }
+  0%, 60%, 100% {
+    background-color: #dadada;
+  }
 }
 /*# sourceMappingURL=style.css.map */

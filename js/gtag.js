@@ -4,3 +4,10 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-150641426-1');
+
+
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   alert("DOM ready!");
+  // });
+
+

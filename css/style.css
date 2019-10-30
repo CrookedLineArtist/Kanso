@@ -51,12 +51,7 @@
   background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
 
-#discover h2 {
-  margin-bottom: 100px;
-}
-
 #discover .grid-container {
-  margin-top: 250px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
@@ -150,8 +145,8 @@ h4 {
 }
 
 .index section {
-  width: 100vmax;
-  height: 70vmin;
+  width: 100vmin;
+  height: 60vmin;
   -webkit-transition-property: height;
   transition-property: height;
   -webkit-transition-delay: 0.2s;
@@ -173,12 +168,18 @@ h4 {
 }
 
 .index section .container {
-  width: 80%;
+  width: 80vmin;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+@media screen and (min-width: 700px) {
+  .index section .container {
+    width: 1200px;
+  }
 }
 
 .contact {
@@ -318,6 +319,12 @@ nav .nav-item ul li {
   padding: 0 25px;
   display: inline-block;
   background-color: transparent;
+  -webkit-transition: font-weight 0.2s ease-in;
+  transition: font-weight 0.2s ease-in;
+}
+
+nav .nav-item ul li:hover {
+  font-weight: 600;
 }
 
 nav .nav-item ul li:hover::before {

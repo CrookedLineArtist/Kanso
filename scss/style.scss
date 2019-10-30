@@ -69,12 +69,10 @@ $trigger-screen: 700px;
 
 #discover {
 
-  h2 {
-    margin-bottom: 100px;
-  }
+
 
   .grid-container {
-    margin-top: 250px;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 12em 12em;
@@ -219,8 +217,8 @@ h4 {
 
 
   section {
-    width: 100vmax;
-    height: 70vmin;
+    width: 100vmin;
+    height: 60vmin;
     transition-property: height;
     transition-delay: 0.2s;
     transition-duration: 0.6s;
@@ -249,11 +247,14 @@ h4 {
     position: relative;
 
     .container {
-      width: 80%;
+      width: 80vmin;
+      @media screen and (min-width: $trigger-screen) {
+        width: 1200px;
+      } 
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0%);
       // background: aqua;
     }
   }
@@ -343,12 +344,16 @@ nav {
         font-family: 'Barlow Semi Condensed', sans-serif;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        font-size: small;
+        font-size: small ;
         // color: whitesmoke;
         padding: 0 25px;
         display: inline-block;
-
         background-color: transparent;
+        transition: font-weight 0.2s ease-in;
+        &:hover{
+          font-weight: 600;
+          
+        }
 
         &:hover::before {
           content: ' ';
@@ -358,6 +363,8 @@ nav {
           width: 3px;
           height: 18px;
           border-radius: 20px 0;
+
+          
 
 
 

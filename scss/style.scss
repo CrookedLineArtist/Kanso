@@ -309,6 +309,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 4;
+
   
   
   .container {
@@ -317,8 +318,12 @@ nav {
     justify-content: space-between;
 
     svg {
-      width: 30px;
-      padding: 30px;
+      width: 25px;
+      
+    }
+
+    .logo{
+      padding: 25px;
     }
 
   }
@@ -337,7 +342,7 @@ nav {
     // transition: 0.5s;
 
     ul {
-      padding: 30px ;
+      padding: 22px ;
       list-style-type: none;
 
       a {
@@ -358,7 +363,7 @@ nav {
         padding: 0 25px;
         display: inline-block;
         background-color: transparent;
-        transition: font-weight 0.2s ease-in;
+        transition: font-weight 0.1s ease-in;
         &:hover{
           font-weight: 600;
           
@@ -372,15 +377,19 @@ nav {
           width: 3px;
           height: 18px;
           border-radius: 20px 0;
+        }
 
-          
-
-
-
+        @media screen and (max-width: $trigger-screen) {
+          display: none;
         }
 
         &:last-child {
           display: none;
+
+          @media screen and (max-width: $trigger-screen) {
+            display: contents;
+
+          }
         }
       }
     }
@@ -391,27 +400,22 @@ nav {
 
 
 // #services
-#services,
-#process {
-  svg {
-    min-width: 1100px;
-    padding-top: 50px;
-  }
+// #services,
+// #process {
+//   svg {
+//     min-width: 1100px;
+//     padding-top: 50px;
+//   }
 
-  .graph {
+//   .graph {
 
-    overflow-x: auto;
+//     overflow-x: auto;
 
-  }
+//   }
 
-}
-
-#we {
+// }
 
 
-   
-   
-}
 
 #approach {
   h2 {
@@ -460,3 +464,35 @@ nav {
     background-color:rgb(218, 218, 218) ;
   }
 }
+
+
+
+
+
+.vw-inside{
+  max-width: 1000px;
+  padding: 2.5em;
+  padding-top: 200px ; 
+  margin: 0 auto;
+  
+
+
+
+  @media screen and (max-width: $trigger-screen) {
+    width: 70%; 
+    margin: 0;
+
+  }
+}
+
+
+
+.margin-top-minus{
+  margin-top: -400px;
+  @media screen and (min-width: 1300) {
+    margin-top: -600px;
+  }
+}
+
+
+

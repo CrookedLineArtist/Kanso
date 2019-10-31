@@ -14,36 +14,44 @@ html(lang="en")
             img(src=''  alt='kanso' )
 
 
-        #services.vw-inside
-            picture                
-                source(media='(max-width: 700px)' srcset='./img/kanso/service/kanso-mobile.svg')
-                source(media='(min-width: 700px)'  srcset='./img/kanso/service/service-desktop.svg')
-                img(src=''  alt='service' )
+        .margin-top-minus
+            #services.vw-inside
+                picture                
+                    source(media='(max-width: 700px)' srcset='./img/kanso/service/service-mobile.svg')
+                    source(media='(min-width: 700px)'  srcset='./img/kanso/service/service-desktop.svg')
+                    img(src=''  alt='service' )
 
 
-        #approach.vw-inside
-            picture                
-                source(media='(max-width: 700px)' srcset='./img/kanso/approach/approach-mobile.svg')
-                source(media='(min-width: 700px)'  srcset='./img/kanso/approach/approach-desktop.svg')
-                img(src=''  alt='service' )
+            #approach.vw-inside
+                picture                
+                    source(media='(max-width: 700px)' srcset='./img/kanso/approach/approach-mobile.svg')
+                    source(media='(min-width: 700px)'  srcset='./img/kanso/approach/approach-desktop.svg')
+                    img(src=''  alt='approach' )
 
 
 
 
-        #process.vw-inside
-            picture                
-                source(media='(max-width: 700px)' srcset='./img/kanso/process/process-mobile.svg')
-                source(media='(min-width: 700px)'  srcset='./img/kanso/process/process-desktop.svg')
-                img(src=''  alt='process' )
+            #process.vw-inside
+                picture                
+                    source(media='(max-width: 700px)' srcset='./img/kanso/process/process-mobile.svg')
+                    source(media='(min-width: 700px)'  srcset='./img/kanso/process/process-desktop.svg')
+                    img(src=''  alt='process' )
 
-        #work
+            #work
 
-        #we.vw-inside
-            
-            picture      
-                source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
-                source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
-                img(src=''  alt='we' )
+            #we
+                
+                .vw-inside
+                    picture      
+                        source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
+                        source(media='(max-width: 700px)' srcset='./img/blank.svg')
+                        img(src=''  alt='we' )
+
+                .vw-100
+                    picture      
+                        source(media='(min-width: 700px)' srcset='./img/blank.svg')        
+                        source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
+                        img(src=''  alt='we' )
 
 
 

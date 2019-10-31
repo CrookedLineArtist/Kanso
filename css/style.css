@@ -305,12 +305,15 @@ nav .container {
 }
 
 nav .container svg {
-  width: 30px;
-  padding: 30px;
+  width: 25px;
+}
+
+nav .container .logo {
+  padding: 25px;
 }
 
 nav .nav-item ul {
-  padding: 30px;
+  padding: 22px;
   list-style-type: none;
 }
 
@@ -328,8 +331,8 @@ nav .nav-item ul li {
   padding: 0 25px;
   display: inline-block;
   background-color: transparent;
-  -webkit-transition: font-weight 0.2s ease-in;
-  transition: font-weight 0.2s ease-in;
+  -webkit-transition: font-weight 0.1s ease-in;
+  transition: font-weight 0.1s ease-in;
 }
 
 nav .nav-item ul li:hover {
@@ -346,19 +349,20 @@ nav .nav-item ul li:hover::before {
   border-radius: 20px 0;
 }
 
+@media screen and (max-width: 700px) {
+  nav .nav-item ul li {
+    display: none;
+  }
+}
+
 nav .nav-item ul li:last-child {
   display: none;
 }
 
-#services svg,
-#process svg {
-  min-width: 1100px;
-  padding-top: 50px;
-}
-
-#services .graph,
-#process .graph {
-  overflow-x: auto;
+@media screen and (max-width: 700px) {
+  nav .nav-item ul li:last-child {
+    display: contents;
+  }
 }
 
 #approach h2 {
@@ -426,6 +430,30 @@ nav .nav-item ul li:last-child {
   }
   0%, 60%, 100% {
     background-color: #dadada;
+  }
+}
+
+.vw-inside {
+  max-width: 1000px;
+  padding: 2.5em;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .vw-inside {
+    width: 70%;
+    margin: 0;
+  }
+}
+
+.margin-top-minus {
+  margin-top: -400px;
+}
+
+@media screen and (min-width: 1300) {
+  .margin-top-minus {
+    margin-top: -600px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -38,7 +38,7 @@ $trigger-screen: 700px;
 
 
 .wide-view {
-  width: 100vw;
+  
 
   @media screen and (max-width: $trigger-screen) {
 
@@ -471,11 +471,15 @@ nav {
 
 .vw-inside{
   max-width: 1000px;
-  padding: 2.5em;
+  
   padding-top: 200px ; 
   margin: 0 auto;
   
+  @media screen and (min-width: $trigger-screen) {
+    padding: 2.5em;
+    padding-top: 200px ; 
 
+  }
 
 
   @media screen and (max-width: $trigger-screen) {
@@ -488,9 +492,9 @@ nav {
 
 
 .margin-top-minus{
-  margin-top: -400px;
+  margin-top: -300px;
   @media screen and (min-width: 700) {
-    margin-top: -500px;
+    margin-top: -6000px;
   }
   @media screen and (min-width: 1300) {
     margin-top: -850px;

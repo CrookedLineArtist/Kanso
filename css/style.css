@@ -24,10 +24,6 @@
   }
 }
 
-.wide-view {
-  width: 100vw;
-}
-
 @media screen and (max-width: 700px) {
   .wide-view {
     display: none;
@@ -435,9 +431,15 @@ nav .nav-item ul li:last-child {
 
 .vw-inside {
   max-width: 1000px;
-  padding: 2.5em;
   padding-top: 200px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+  .vw-inside {
+    padding: 2.5em;
+    padding-top: 200px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -448,12 +450,12 @@ nav .nav-item ul li:last-child {
 }
 
 .margin-top-minus {
-  margin-top: -400px;
+  margin-top: -300px;
 }
 
 @media screen and (min-width: 700) {
   .margin-top-minus {
-    margin-top: -500px;
+    margin-top: -6000px;
   }
 }
 

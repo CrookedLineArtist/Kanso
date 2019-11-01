@@ -181,7 +181,7 @@ p {
 h2 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   text-transform: uppercase;
-  font-size: 33px;
+  font-size: 30px;
   max-width: 600px;
   margin: 1em 0;
   letter-spacing: 0.1em;
@@ -489,8 +489,11 @@ nav {
 
 .margin-top-minus{
   margin-top: -400px;
+  @media screen and (min-width: 700) {
+    margin-top: -500px;
+  }
   @media screen and (min-width: 1300) {
-    margin-top: -600px;
+    margin-top: -850px;
   }
 }
 

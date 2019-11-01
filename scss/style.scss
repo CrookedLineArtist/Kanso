@@ -77,18 +77,26 @@ $trigger-screen: 700px;
   @include linear-gradient-alt(rgb(204, 204, 204));
 }
 
-#discover {
+.e-com{
+  @include linear-gradient-alt(#DE4F4F);
+}
+.soon{
+  @include linear-gradient-alt(black);
+}
 
+#we {
 
+  
 
   .grid-container {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-template-rows: 12em 12em;
-
+    grid-template-rows: repeat(3, 12em) ;
+    
     div {
       padding: 1em;
+      
     }
   }
 }

@@ -120,21 +120,22 @@ html(lang="en")
                                 text(transform='translate(684.68 596.95)' style='font-size: 26.px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em') MORE COMING SOON...
 
 
-                .mobile
+            .mobile.vw-100
+                    include _include/mobile_work.pug
 
-            #we
-                
-                .vw-inside
-                    picture      
-                        source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
-                        source(media='(max-width: 700px)' srcset='./img/blank.svg')
-                        img(src=''  alt='we' )
 
-                .vw-100
-                    picture      
-                        source(media='(min-width: 700px)' srcset='./img/blank.svg')        
-                        source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
-                        img(src=''  alt='we' )
+                    
+            .vw-inside
+                picture      
+                    source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
+                    source(media='(max-width: 700px)' srcset='./img/blank.svg')
+                    img(src=''  alt='we' )
+
+            .vw-100
+                picture      
+                    source(media='(min-width: 700px)' srcset='./img/blank.svg')        
+                    source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
+                    img(src=''  alt='we' )
 
 
 

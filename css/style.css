@@ -54,16 +54,24 @@
   background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
 
-#discover .grid-container {
+.e-com {
+  background: linear-gradient(55deg, #DE4F4F, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+.soon {
+  background: linear-gradient(55deg, black, 80%, rgba(255, 255, 255, 0.637) 170%);
+}
+
+#we .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  -ms-grid-rows: 12em 12em;
-      grid-template-rows: 12em 12em;
+  -ms-grid-rows: (12em)[3];
+      grid-template-rows: repeat(3, 12em);
 }
 
-#discover .grid-container div {
+#we .grid-container div {
   padding: 1em;
 }
 

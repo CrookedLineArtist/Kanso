@@ -2,16 +2,12 @@
 html(lang="en")
     
     include _include/head.pug
-    body
+    body(data-spy="scroll" data-target="#navbar" data-offset="0")
         //include _include/loading.pug
         
         include _include/nav.pug
 
-        picture.vw-100
-            source(media='(min-width: 1500px)' srcset='./img/kanso/kanso-wide.svg')
-            source(media='(max-width: 700px)' srcset='./img/kanso/kanso-mobile.svg')
-            source(media='(min-width: 700px)'  srcset='./img/kanso/kanso-desktop.svg')
-            img(src=''  alt='kanso' )
+        include _include/banner.pug
 
 
         .margin-top-minus
@@ -41,22 +37,22 @@ html(lang="en")
                 .wide-view
                     svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 994.84 663.23')
                         defs
-                            lineargradient#linear-gradient(y1='331.61' x2='331.61' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient(y1='331.61' x2='971.61' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#749bd1')
                                 stop(offset='1' stop-color='#749bd1' stop-opacity='0')
-                            lineargradient#linear-gradient-2(x1='331.61' y1='331.61' x2='663.23' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient-2(x1='331.61' y1='331.61' x2='971.23' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#3ea887')
                                 stop(offset='1' stop-color='#3ea887' stop-opacity='0')
-                            lineargradient#linear-gradient-3(y1='663.23' x2='331.61' y2='331.61' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient-3(y1='663.23' x2='971.61' y2='331.61' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#7f3f98')
                                 stop(offset='1' stop-color='#749bd1' stop-opacity='0')
-                            lineargradient#linear-gradient-4(x1='331.61' y1='663.23' x2='663.23' y2='331.61' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient-4(x1='331.61' y1='663.23' x2='971.23' y2='331.61' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#de4f4f')
                                 stop(offset='1' stop-color='#de4f4f' stop-opacity='0')
-                            lineargradient#linear-gradient-5(x1='663.23' y1='331.61' x2='994.84' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient-5(x1='663.23' y1='331.61' x2='971.84' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#e2a851')
                                 stop(offset='1' stop-color='#e2a851' stop-opacity='0')
-                            lineargradient#linear-gradient-6(x1='663.23' y1='663.23' x2='994.84' y2='331.61' gradientunits='userSpaceOnUse')
+                            lineargradient#linear-gradient-6(x1='663.23' y1='663.23' x2='971.84' y2='331.61' gradientunits='userSpaceOnUse')
                                 stop(offset='0' stop-color='#272727')
                                 stop(offset='1' stop-color='#f5f5f5')
                         title works
@@ -101,41 +97,44 @@ html(lang="en")
                                         tspan(style='letter-spacing: 0.06699973985586284em')
                                         tspan(x='0' y='32') LAW ANALYTICS
 
-                            g
-                                rect(x='331.61' y='331.61' width='331.61' height='331.61' style='fill: url(#linear-gradient-4)')
-                                text(transform='translate(363.97 596.95)' style='font-size: 26px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em') E - COMMERCE
-                                rect(x='663.23' width='331.61' height='331.61' style='fill: url(#linear-gradient-5)')
-                                text(transform='translate(686.68 311.86)' style='font-size: 18px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Light, Barlow Semi Condensed;font-weight: 300;letter-spacing: 0.05em')
-                                    | VIDEO
+                            a(href='./motion.html')
+                                g
+                                    rect(x='331.61' y='331.61' width='331.61' height='331.61' style='fill: url(#linear-gradient-4)')
+                                    text(transform='translate(363.97 596.95)' style='font-size: 26px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em') E - COMMERCE
+                                    rect(x='663.23' width='331.61' height='331.61' style='fill: url(#linear-gradient-5)')
+                                    text(transform='translate(686.68 311.86)' style='font-size: 18px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Light, Barlow Semi Condensed;font-weight: 300;letter-spacing: 0.05em')
+                                        | VIDEO
 
-                                text(transform='translate(686.68 251.06)' style='font-size: 26px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em')
-                                    | MOTION GRAPHICS
+                                    text(transform='translate(686.68 251.06)' style='font-size: 26px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em')
+                                        | MOTION GRAPHICS
 
-                                    tspan(x='215.73' y='0' style='font-family: MyriadPro-Regular, Myriad Pro;font-weight: 400')  
-                                    tspan(style='letter-spacing: 0.04998887395641037em')
-                                    tspan(x='0' y='32') SHOWREEL
+                                        tspan(x='215.73' y='0' style='font-family: MyriadPro-Regular, Myriad Pro;font-weight: 400')  
+                                        tspan(style='letter-spacing: 0.04998887395641037em')
+                                        tspan(x='0' y='32') SHOWREEL
 
+                            
                             g
                                 rect(x='663.23' y='331.61' width='331.61' height='331.61' style='fill: url(#linear-gradient-6)')
-                                text(transform='translate(684.68 596.95)' style='font-size: 26.px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em') MORE COMING SOON...
+                                text(transform='translate(684.68 596.95)' style='font-size: 26px;fill: #f7f7f7;font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;font-weight: 700;letter-spacing: 0.050007184899251544em') MORE COMING SOON...
 
 
-            .mobile.vw-100
-                    include _include/mobile_work.pug
+            #we
+                .mobile.vw-100
+                        include _include/mobile_work.pug
 
 
-                    
-            .vw-inside
-                picture      
-                    source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
-                    source(media='(max-width: 700px)' srcset='./img/blank.svg')
-                    img(src=''  alt='we' )
+                        
+                .vw-inside
+                    picture      
+                        source(media='(min-width: 700px)' srcset='./img/kanso/we/we-wide.svg')        
+                        source(media='(max-width: 700px)' srcset='./img/blank.svg')
+                        img(src=''  alt='we' )
 
-            .vw-100
-                picture      
-                    source(media='(min-width: 700px)' srcset='./img/blank.svg')        
-                    source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
-                    img(src=''  alt='we' )
+                .vw-100
+                    picture      
+                        source(media='(min-width: 700px)' srcset='./img/blank.svg')        
+                        source(media='(max-width: 700px)' srcset='./img/kanso/we/we-mobile.svg')
+                        img(src=''  alt='we' )
 
 
 

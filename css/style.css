@@ -289,80 +289,49 @@ h4 {
   background-color: rgba(255, 255, 255, 0.961);
 }
 
-.case-1 .inside-box {
-  margin-top: 10vmin;
+.navbar .nav-pills .nav-item .nav-link:active {
+  background-color: black;
 }
 
-@media only screen and (max-width: 800px) {
-  .case-1 .inside-box {
-    margin-top: 20vmax;
-  }
+.navbar ul {
+  list-style-type: none;
 }
 
-.case-1 .inside-box .page {
-  margin: 5vmin;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+.navbar a {
+  color: rgba(24, 24, 24, 0.76);
 }
 
-@media only screen and (max-width: 800px) {
-  .case-1 .inside-box .page {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    padding: 8vmin 1vmin;
-  }
+.navbar a:hover {
+  color: black;
 }
 
-.case-1 .inside-box .page div {
-  padding: 8vmin;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.navbar li {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: small;
+  background-color: transparent;
+  -webkit-transition: font-weight 0.1s ease-in;
+  transition: font-weight 0.1s ease-in;
 }
 
-@media only screen and (max-width: 800px) {
-  .case-1 .inside-box .page div {
-    padding: 1.8vmin;
-  }
+.navbar li:hover {
+  font-weight: 500;
 }
 
-.case-1 .inside-box .page .screen img {
-  width: 95%;
-  margin: 0 auto;
-  border-radius: 5px;
-  -webkit-box-shadow: 30px 30px 2px #F8F8F8;
-          box-shadow: 30px 30px 2px #F8F8F8;
-  border: 1px #eeeeee solid;
+.navbar li:hover::before {
+  content: ' ';
+  position: absolute;
+  background-color: #F52D01;
+  margin-top: 11px;
+  margin-left: 8px;
+  width: 3px;
+  height: 18px;
+  border-radius: 20px 0;
 }
 
-.case-1 .inside-box .duct-img {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-@media only screen and (max-width: 900px) {
-  .case-1 .inside-box .duct-img {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-}
-
-.case-1 .inside-box .duct-img .screen {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.case-1 .inside-box .duct-img .screen img {
-  max-width: 30vmax;
-}
-
-@media only screen and (max-width: 900px) {
-  .case-1 .inside-box .duct-img .screen img {
-    max-width: 100vmin;
-  }
+.navbar li:active {
+  background-color: black;
 }
 
 #approach h2 {

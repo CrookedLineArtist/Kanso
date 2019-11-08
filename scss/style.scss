@@ -483,14 +483,14 @@ nav {
   margin: 0 auto;
   
   @media screen and (min-width: $trigger-screen) {
-    padding: 2.5em;
+    padding: 0.5em;
     padding-top: 200px ; 
 
   }
 
 
   @media screen and (max-width: $trigger-screen) {
-    width: 70%; 
+    width: 90%; 
     margin: 0;
 
   }

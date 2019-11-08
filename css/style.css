@@ -289,80 +289,79 @@ h4 {
   background-color: rgba(255, 255, 255, 0.961);
 }
 
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 4;
+.case-1 .inside-box {
+  margin-top: 10vmin;
 }
 
-nav .conta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav .conta svg {
-  width: 25px;
-}
-
-nav .conta .logo {
-  padding: 25px;
-}
-
-nav .nav-item ul {
-  padding: 22px;
-  list-style-type: none;
-}
-
-nav .nav-item ul a {
-  text-decoration: none;
-  /* no underline */
-  color: black;
-}
-
-nav .nav-item ul li {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: small;
-  padding: 0 25px;
-  display: inline-block;
-  background-color: transparent;
-  -webkit-transition: font-weight 0.1s ease-in;
-  transition: font-weight 0.1s ease-in;
-}
-
-nav .nav-item ul li:hover {
-  font-weight: 600;
-}
-
-nav .nav-item ul li:hover::before {
-  content: ' ';
-  position: absolute;
-  background-color: #F52D01;
-  margin-left: -15px;
-  width: 3px;
-  height: 18px;
-  border-radius: 20px 0;
-}
-
-@media screen and (max-width: 700px) {
-  nav .nav-item ul li {
-    display: none;
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box {
+    margin-top: 20vmax;
   }
 }
 
-nav .nav-item ul li:last-child {
-  display: none;
+.case-1 .inside-box .page {
+  margin: 5vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
-@media screen and (max-width: 700px) {
-  nav .nav-item ul li:last-child {
-    display: contents;
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box .page {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 8vmin 1vmin;
+  }
+}
+
+.case-1 .inside-box .page div {
+  padding: 8vmin;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .case-1 .inside-box .page div {
+    padding: 1.8vmin;
+  }
+}
+
+.case-1 .inside-box .page .screen img {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 30px 30px 2px #F8F8F8;
+          box-shadow: 30px 30px 2px #F8F8F8;
+  border: 1px #eeeeee solid;
+}
+
+.case-1 .inside-box .duct-img {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px) {
+  .case-1 .inside-box .duct-img {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.case-1 .inside-box .duct-img .screen {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.case-1 .inside-box .duct-img .screen img {
+  max-width: 30vmax;
+}
+
+@media only screen and (max-width: 900px) {
+  .case-1 .inside-box .duct-img .screen img {
+    max-width: 100vmin;
   }
 }
 
@@ -449,7 +448,7 @@ nav .nav-item ul li:last-child {
 
 @media screen and (max-width: 700px) {
   .vw-inside {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
 }

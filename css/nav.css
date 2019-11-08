@@ -1,0 +1,45 @@
+.navbar .nav-pills .nav-item .nav-link:active {
+  background-color: black;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar a {
+  color: rgba(24, 24, 24, 0.76);
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar li {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: small;
+  background-color: transparent;
+  -webkit-transition: font-weight 0.1s ease-in;
+  transition: font-weight 0.1s ease-in;
+}
+
+.navbar li:hover {
+  font-weight: 500;
+}
+
+.navbar li:hover::before {
+  content: ' ';
+  position: absolute;
+  background-color: #F52D01;
+  margin-top: 11px;
+  margin-left: 8px;
+  width: 3px;
+  height: 18px;
+  border-radius: 20px 0;
+}
+
+.navbar li:active {
+  background-color: black;
+}
+/*# sourceMappingURL=nav.css.map */

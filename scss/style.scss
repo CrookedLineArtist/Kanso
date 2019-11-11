@@ -84,22 +84,22 @@ $trigger-screen: 700px;
   @include linear-gradient-alt(black);
 }
 
-#we {
+// #we {
 
   
 
-  .grid-container {
+//   .grid-container {
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-template-rows: repeat(3, 12em) ;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+//     grid-template-rows: repeat(3, 12em) ;
     
-    div {
-      padding: 1em;
+//     div {
+//       padding: 1em;
       
-    }
-  }
-}
+//     }
+//   }
+// }
 
 
 
@@ -176,6 +176,8 @@ html {
   font-size: 1.1em;
   scroll-behavior: smooth;
   position: relative;
+  overflow-x: hidden;
+  padding-bottom: 200px;
 
 }
 
@@ -243,7 +245,7 @@ h4 {
     padding-top: 100px;
 
 
-    @media  screen and (max-width:$trigger-screen) {
+    @media  screen and (max-width:768px) {
       height: 80vh;
       &:hover {
         top: 10;
@@ -410,7 +412,7 @@ h4 {
 
 
 .margin-top-minus{
-  margin-top: -300px;
+  margin-top: -280px;
   @media screen and (min-width: 700) {
     margin-top: -6000px;
   }

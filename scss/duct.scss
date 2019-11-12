@@ -2,9 +2,7 @@
 
 .case-1{
 
-    *{
-      //border: black 1px solid;
-    }
+
   
     .inside-box{
 
@@ -15,6 +13,7 @@
   
   
       .page{
+        
         margin: 5vmin;
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -31,12 +30,19 @@
 
         }
         .screen{
+          @media only screen and (max-width: 600px) {
+            order: -1; 
+          }
+          
           img{
             width: 95%;
             margin: 0 auto;
             border-radius: 5px;
             box-shadow: 30px 30px 2px #F8F8F8;
             border: 1px rgb(238, 238, 238) solid;
+            &:hover{
+              box-shadow: 20px 20px 1px #F8F8F8;
+            }
           }
         }
       }

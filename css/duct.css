@@ -37,6 +37,14 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .case-1 .inside-box .page .screen {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 .case-1 .inside-box .page .screen img {
   width: 95%;
   margin: 0 auto;
@@ -44,6 +52,11 @@
   -webkit-box-shadow: 30px 30px 2px #F8F8F8;
           box-shadow: 30px 30px 2px #F8F8F8;
   border: 1px #eeeeee solid;
+}
+
+.case-1 .inside-box .page .screen img:hover {
+  -webkit-box-shadow: 20px 20px 1px #F8F8F8;
+          box-shadow: 20px 20px 1px #F8F8F8;
 }
 
 .case-1 .inside-box .duct-img {

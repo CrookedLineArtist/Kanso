@@ -112,8 +112,8 @@
 
 @media screen and (max-width: 900px) {
   #work .grid-container {
-    -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     -ms-grid-rows: (12em)[3];
         grid-template-rows: repeat(3, 12em);
   }

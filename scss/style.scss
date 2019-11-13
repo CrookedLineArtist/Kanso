@@ -95,7 +95,14 @@ $trigger-screen: 700px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    grid-template-rows: repeat(3, 13em) ;
+    grid-template-rows: repeat(3, 12em) ;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      grid-template-rows: repeat(3, 12em) ;
+
+    }
+    
     
 
     div {
@@ -229,16 +236,16 @@ p {
 h2 {
   
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   max-width: 670px;
   
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   font-weight: 700;
 }
 
 h3 {
   
-  text-transform: capitalize;
+  text-transform: uppercase;
   line-height: 48px;
   font-size: 30px;
   font-weight: 600;
@@ -253,6 +260,9 @@ h4 {
   line-height: 30px;
   margin-top: 16px;
   font-weight: 600;
+  @media screen and (max-width: $trigger-screen) {
+    font-size: 24px;
+  }
   small{
     text-transform: capitalize;
   }
@@ -265,7 +275,10 @@ h5 {
   max-width: 280px;
   line-height: 22px;
   margin-top: 16px;
-  font-weight: 200;
+  font-weight: 300;
+  @media screen and (max-width: 900px) {
+    font-size: 14px;
+  }
 
   
 }
@@ -277,9 +290,14 @@ h5 {
 
   section {
     width: 100%;
-    
-
     padding: 100px 0; 
+    .container{
+      @media screen  and (max-width:$trigger-screen){
+        padding: 10vmax;
+      
+      }
+    }
+    
     
 }
 
@@ -320,23 +338,6 @@ h5 {
 
 
 
-
-
-// #services
-// #services,
-// #process {
-//   svg {
-//     min-width: 1100px;
-//     padding-top: 50px;
-//   }
-
-//   .graph {
-
-//     overflow-x: auto;
-
-//   }
-
-// }
 
 
 
@@ -476,7 +477,19 @@ h5 {
 
 
 #process{
-  .process-icon{
-    width: 100px;
+  .container{
+    @media screen and (max-width:900px){
+      img{
+        max-width: 400px;
+      }
+    }
+
+          
+
+        }
   }
-}
+
+
+
+
+

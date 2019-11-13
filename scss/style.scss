@@ -46,6 +46,14 @@ $trigger-screen: 700px;
   }
 }
 
+a{
+  color:#1a1a1a;
+  :hover{
+    color:#DE4F4F;
+    text-decoration: none;
+  }
+
+}
 
 
 @mixin linear-gradient-alt($alt-color) {
@@ -94,20 +102,17 @@ $trigger-screen: 700px;
   .grid-container {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    grid-template-rows: repeat(3, 12em) ;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-auto-rows: 250px;
 
 
     @media screen and (min-width: 900px) {
         max-width: 1200px;
         margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     }
 
-    @media screen and (max-width: 900px) {
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-      grid-template-rows: repeat(3, 12em) ;
 
-    }
     
     
 
@@ -236,9 +241,9 @@ html {
 
 p {
   font-family: 'Barlow', sans-serif;
-  max-width: 440px;
-  line-height: 1.2em;
-  margin-bottom: 1.4em;
+  max-width: 540px;
+  line-height: 1.4em;
+  margin-bottom: 1.5em;
   
 }
 
@@ -246,7 +251,7 @@ h2 {
   
   text-transform: uppercase;
   font-size: 40px;
-  max-width: 670px;
+  max-width: 830px;
   
   letter-spacing: 0.01em;
   font-weight: 700;
@@ -281,9 +286,10 @@ h4 {
 h5 {
   font-family: 'Barlow ', sans-serif;
   font-size: 16px;
-  max-width: 280px;
+  
   line-height: 22px;
   margin-top: 16px;
+  margin-bottom: 2px;
   font-weight: 300;
   @media screen and (max-width: 900px) {
     font-size: 14px;
@@ -299,7 +305,8 @@ h5 {
 
   section {
     width: 100%;
-    padding: 100px 0; 
+    padding-top: 200px ; 
+ 
     .container{
       @media screen  and (max-width:$trigger-screen){
         padding: 10vmax;
@@ -501,4 +508,13 @@ h5 {
 
 
 
+#approach{
 
+  background: url(../img/kanso/approach/bg.svg) no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-attachment: fixed;
+
+
+  
+}

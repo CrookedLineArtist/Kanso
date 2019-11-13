@@ -30,6 +30,15 @@
   }
 }
 
+a {
+  color: #1a1a1a;
+}
+
+a :hover {
+  color: #DE4F4F;
+  text-decoration: none;
+}
+
 .homzhub {
   background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
 }
@@ -97,25 +106,17 @@
 #work .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  -ms-grid-rows: (12em)[3];
-      grid-template-rows: repeat(3, 12em);
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-auto-rows: 250px;
 }
 
 @media screen and (min-width: 900px) {
   #work .grid-container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #work .grid-container {
-    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    -ms-grid-rows: (12em)[3];
-        grid-template-rows: repeat(3, 12em);
+    -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 
@@ -195,15 +196,15 @@ html {
 
 p {
   font-family: 'Barlow', sans-serif;
-  max-width: 440px;
-  line-height: 1.2em;
-  margin-bottom: 1.4em;
+  max-width: 540px;
+  line-height: 1.4em;
+  margin-bottom: 1.5em;
 }
 
 h2 {
   text-transform: uppercase;
   font-size: 40px;
-  max-width: 670px;
+  max-width: 830px;
   letter-spacing: 0.01em;
   font-weight: 700;
 }
@@ -235,9 +236,9 @@ h4 small {
 h5 {
   font-family: 'Barlow ', sans-serif;
   font-size: 16px;
-  max-width: 280px;
   line-height: 22px;
   margin-top: 16px;
+  margin-bottom: 2px;
   font-weight: 300;
 }
 
@@ -249,7 +250,7 @@ h5 {
 
 section {
   width: 100%;
-  padding: 100px 0;
+  padding-top: 200px;
 }
 
 @media screen and (max-width: 700px) {
@@ -583,5 +584,12 @@ section {
   #process .container img {
     max-width: 400px;
   }
+}
+
+#approach {
+  background: url(../img/kanso/approach/bg.svg) no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=style.css.map */

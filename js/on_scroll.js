@@ -18,3 +18,8 @@
       logo.style.visibility = "hidden";
     }
   }
+
+
+  function menuButtonToggle(x) {
+    x.classList.toggle("change");
+  }

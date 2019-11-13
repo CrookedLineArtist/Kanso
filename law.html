@@ -20,12 +20,10 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md d-flex fixed-top" id="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
-           <svg width="20px" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.57628e-07 2C-0.552284 2 -1 1.55228 -1 1C-1 0.447716 -0.552285 4.57267e-07 -2.66237e-07 4.33126e-07L12 -9.14109e-08C12.5523 -1.15552e-07 13 0.447715 13 1C13 1.55228 12.5523 2 12 2L3.57628e-07 2Z" fill="#F52D01"/>
-<path d="M-2.38419e-07 8C-0.552285 8 -1 7.55228 -1 7C-1 6.44772 -0.552285 6 -2.06632e-07 6L10 6C10.5523 6 11 6.44772 11 7C11 7.55228 10.5523 8 10 8L-2.38419e-07 8Z" fill="#F52D01"/>
-<path d="M-5.96046e-08 14C-0.552285 14 -1 13.5523 -1 13C-1 12.4477 -0.552285 12 -1.47027e-07 12L7 12C7.55228 12 8 12.4477 8 13C8 13.5523 7.55228 14 7 14L-5.96046e-08 14Z" fill="#F52D01"/>
-</svg></span></button><a class="navbar-brand" href="index.html">
+      <button class="navbar-toggler" onclick="menuButtonToggle(this)" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div></span></button><a class="navbar-brand" href="index.html">
         <div class="align-top"><img src="./img/kanso.svg" alt="kanso logo" width="30" height="30"/></div></a>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="nav nav-pills">
@@ -42,28 +40,29 @@
     </picture>
     <section id="work">
       <div class="container">
-        <h3 class="pb-5">Our work</h3>
-        <div class="grid-container">
-          <div class="homzhub" onclick="location.href='homzhub.html';">
-            <h4>Homzhub <br/><small>Desktop App </small></h4>
-          </div>
-          <div class="duct" onclick="location.href='duct.html';">
-            <h4>Duct Test App <br/><small>Tablet App</small></h4>
-          </div>
-          <div class="motion" onclick="location.href='motion.html';">
-            <h4>Motion Graphics Showreel <br/><small>Video</small></h4>
-          </div>
-          <div class="law" onclick="location.href='law.html';">
-            <h4>RIVERUS<br/><small>Law Analyics </small></h4>
-          </div>
-          <div class="shop" onclick="location.href='e-commerce.html';">
-            <h4> e-commerce</h4>
-          </div>
-          <div class="soon" onclick="location.href='';">
-            <h4>More comming soon</h4>
-          </div>
+        <h3 class="pb-3">Our work</h3>
+      </div>
+      <div class="grid-container">
+        <div class="homzhub" onclick="location.href='homzhub.html';">
+          <h4>Homzhub <br/><small>Desktop App </small></h4>
+        </div>
+        <div class="duct" onclick="location.href='duct.html';">
+          <h4>Duct Test App <br/><small>Tablet App</small></h4>
+        </div>
+        <div class="motion" onclick="location.href='motion.html';">
+          <h4>Motion Graphics Showreel <br/><small>Video</small></h4>
+        </div>
+        <div class="law" onclick="location.href='law.html';">
+          <h4>RIVERUS<br/><small>Law Analyics </small></h4>
+        </div>
+        <div class="shop" onclick="location.href='e-commerce.html';">
+          <h4> e-commerce</h4>
+        </div>
+        <div class="soon" onclick="location.href='';">
+          <h4>More comming soon</h4>
         </div>
       </div>
     </section>
+    <footer></footer>
   </body>
 </html>

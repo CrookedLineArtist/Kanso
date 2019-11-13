@@ -94,8 +94,14 @@ $trigger-screen: 700px;
   .grid-container {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: repeat(3, 12em) ;
+
+
+    @media screen and (min-width: 900px) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
     @media screen and (max-width: 900px) {
       grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -209,8 +215,11 @@ $trigger-screen: 700px;
   padding: 0;
   //border: 1px grey solid;
   transition: all 0.1s ease;
+  
 
 }
+
+
 
 body,
 html {

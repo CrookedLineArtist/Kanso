@@ -8,12 +8,6 @@
   width: 100%;
 }
 
-.vw-inside {
-  max-width: 1000px;
-  padding: 3em;
-  margin: 0 auto;
-}
-
 .mobile {
   width: 100vw;
 }
@@ -438,23 +432,8 @@ section {
 }
 
 .vw-inside {
-  max-width: 1000px;
-  padding-top: 200px;
+  max-width: 1400px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 700px) {
-  .vw-inside {
-    padding: 0.5em;
-    padding-top: 200px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .vw-inside {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 .margin-top-minus {

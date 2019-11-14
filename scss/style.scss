@@ -20,11 +20,8 @@ $trigger-screen: 700px;
   }
 }
 
-.vw-inside{
-  max-width: 1000px;
-  padding: 3em;;
-  margin: 0 auto;
-}
+
+
 
 
 
@@ -405,23 +402,22 @@ h5 {
 
 
 .vw-inside{
-  max-width: 1000px;
-  
-  padding-top: 200px ; 
+  max-width: 1400px;
+
   margin: 0 auto;
   
-  @media screen and (min-width: $trigger-screen) {
-    padding: 0.5em;
-    padding-top: 200px ; 
+  // @media screen and (min-width: $trigger-screen) {
+  //   padding: 0.5em;
+  //   padding-top: 200px ; 
 
-  }
+  // }
 
 
-  @media screen and (max-width: $trigger-screen) {
-    width: 100%; 
-    margin: 0;
+  // @media screen and (max-width: $trigger-screen) {
+  //   width: 100%; 
+  //   margin: 0;
 
-  }
+  // }
 }
 
 

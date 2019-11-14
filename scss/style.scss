@@ -305,8 +305,10 @@ h5 {
 
   section {
     width: 100%;
-    padding-top: 200px ; 
- 
+    padding-top: 100px ; 
+    position: relative;
+    min-height: 60vmin;
+
     .container{
       @media screen  and (max-width:$trigger-screen){
         padding: 10vmax;
@@ -349,8 +351,6 @@ h5 {
   background-color: rgba(255, 255, 255, 0.961);
 }
 
-
-@import 'nav';
 
 
 
@@ -488,6 +488,29 @@ h5 {
     background-position:  center;
     
   }
+}
+.bg-bottom{
+
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: -80vh;
+  
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-position: bottom ;
+    
+  }
+
 }
 
 

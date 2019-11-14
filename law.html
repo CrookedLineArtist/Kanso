@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/bootstrap.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/nav.css"/>
+    <link rel="stylesheet" href="./css/case.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli|Rubik&amp;display=swap" rel="stylesheet"/>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-150641426-1"></script>
     <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -33,10 +35,15 @@
       </div>
     </nav>
     <div class="bg"></div>
+    <div class="container">
+      <picture>
+        <source media="(max-width: 700px)" srcset="./img/blank.svg"/>
+        <source media="(min-width: 700px)" srcset="./img/law/law-desktop.svg"/><img src="" alt="law"/>
+      </picture>
+    </div>
     <picture class="vw-100">
-      <source media="(min-width: 1500px)" srcset="./img/law/law-wide.svg"/>
       <source media="(max-width: 700px)" srcset="./img/law/law-mobile.svg"/>
-      <source media="(min-width: 700px)" srcset="./img/law/law-desktop.svg"/><img src="" alt="law"/>
+      <source media="(min-width: 700px)" srcset="./img/blank.svg"/><img src="" alt="law"/>
     </picture>
     <section id="work">
       <div class="container">

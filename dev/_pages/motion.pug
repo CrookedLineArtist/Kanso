@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-html(lang="en")
-    
-    include  ../_include/head.pug
-    body
+extends ../_extends/case.pug
+block case-study
+    section
+        .container
+            h3 Motion Graphics showreel
 
-        include  ../_include/nav.pug
+            hr
 
-
-        section
-            .container
-                h3 Motion Graphics showreel
-
-                hr
-
-                p 
-                    small We helped the client with visual design of their ecommerce platforms with various clients while working hand in hand with their technical teams.
+            p 
+                small We helped the client with visual design of their ecommerce platforms with various clients while working hand in hand with their technical teams.
 
 
-                svg(width='100%'  viewbox='0 0 1064 599' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    rect(y='-6.10352e-05' width='1064' height='599' fill='#333333')
-
-
-
-        include  ../_include/work.pug
-        include  ../_include/footer.pug
+            svg(width='100%'  viewbox='0 0 1064 599' fill='none' xmlns='http://www.w3.org/2000/svg')
+                rect(y='-6.10352e-05' width='1064' height='599' fill='#333333')

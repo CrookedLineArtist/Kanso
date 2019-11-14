@@ -23,3 +23,18 @@
   function menuButtonToggle(x) {
     x.classList.toggle("change");
   }
+
+  var page = "";
+
+  function pageChange(page){
+    
+    var murl = page + "m.html" ;
+    var url = page + ".html";
+
+    if(window.innerWidth > 800){
+      window.location.href =url;
+    }
+    else{
+      window.location.href = murl;
+    }
+  }

@@ -212,7 +212,7 @@ html {
 p {
   font-family: 'Barlow', sans-serif;
   max-width: 540px;
-  line-height: 1.4em;
+  line-height: 1.6em;
   margin-bottom: 1.5em;
 }
 
@@ -502,7 +502,7 @@ section {
 .bg {
   width: 100vw;
   height: 100vh;
-  margin-bottom: -80vh;
+  margin-bottom: -100vh;
   z-index: -1;
 }
 

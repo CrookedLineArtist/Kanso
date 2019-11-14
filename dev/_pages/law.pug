@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-html(lang="en")
-    
-    include  ../_include/head.pug
-
-    
-    body
-
-        include  ../_include/nav.pug
-
-        //- .wide-view
-        //-     include law/law-desktop.pug
-
-        //- .mobile
-        //-     include law/law-mobile.pug
-
-        .container
-            picture
-
-                source(media='(max-width: 700px)' srcset='./img/blank.svg')
-                source(media='(min-width: 700px)'  srcset='./img/law/law-desktop.svg')
-                img(src=''  alt='law' )
-
-        picture.vw-100
-
-            source(media='(max-width: 700px)' srcset='./img/law/law-mobile.svg')
-            source(media='(min-width: 700px)'  srcset='./img/blank.svg')
-            img(src=''  alt='law' )
-
-
-
-        include  ../_include/work.pug
-        include  ../_include/footer.pug
+extends ../_extends/case.pug
+block case-study
+    .vw-100
+        include ../_include/law/desktop.pug

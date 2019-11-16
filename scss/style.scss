@@ -256,14 +256,11 @@ html {
 
 }
 
-body{
-  
-}
 
 
 p {
   font-family: 'Barlow', sans-serif;
-  max-width: 540px;
+  max-width: 500px;
   line-height: 1.6em;
   margin-bottom: 1.5em;
   
@@ -512,15 +509,12 @@ h5 {
 }
 .bg-bottom{
 
-  width: 100vw;
-  height: 100vh;
-  margin-bottom: -80vh;
-  
+
   &::before {
     content: " ";
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0%;
     left: 0%;
     z-index: -1;
@@ -528,7 +522,7 @@ h5 {
     background-size: cover;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    background-position: bottom ;
+  
     
   }
 
@@ -575,4 +569,82 @@ h5 {
 
 
   
+}
+
+
+
+
+
+
+
+
+
+// homzbub desktop css
+
+.homzhub-desktop{
+  .wireframe{
+    background: url(../img/homzhub/wireframes.png) no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+
+
+    height: 40vmax;
+
+  }
+
+  .top-vs-side{
+
+
+    
+    background: url(../img/homzhub/top-vs-side.svg) no-repeat;
+    background-size: auto;
+    background-position: right;
+  }
+
+  .para{
+    max-width: 300px;
+  }
+
+
+  .post{
+    background: url(../img/homzhub/post%20easy-desk.png) no-repeat;
+    background-size: contain;
+    height: 80vmax;
+
+
+  }
+
+  .post-dashboard{
+    background: url(../img/homzhub/Owner%20dashboard.png) no-repeat;
+    background-size: cover;
+    height: 100vmax;
+
+  }
+
+  .seemless{
+    background: url(../img/homzhub/seemless.png) no-repeat;
+    background-size: contain;
+    height: 80vmax
+  }
+
+
+  .output{
+    background: url(../img/homzhub/output.png) no-repeat;
+    background-size: contain;
+    height: 50vmax
+  }
+
+  .homzhub-main{
+    background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right;
+    height: 80vmin;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }

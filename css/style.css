@@ -555,7 +555,7 @@ section {
   height: 100vh;
 }
 
-.homzhub-desktop .wireframe {
+.wireframe {
   background: url(../img/homzhub/wireframes.png) no-repeat;
   background-size: cover;
   background-position: right center;
@@ -563,41 +563,41 @@ section {
   height: 40vmax;
 }
 
-.homzhub-desktop .top-vs-side {
+.top-vs-side {
   background: url(../img/homzhub/top-vs-side.svg) no-repeat;
   background-size: auto;
   background-position: right;
 }
 
-.homzhub-desktop .para {
+.para {
   max-width: 300px;
 }
 
-.homzhub-desktop .post {
+.post {
   background: url(../img/homzhub/post%20easy-desk.png) no-repeat;
   background-size: contain;
   height: 80vmax;
 }
 
-.homzhub-desktop .post-dashboard {
+.post-dashboard {
   background: url(../img/homzhub/Owner%20dashboard.png) no-repeat;
   background-size: cover;
   height: 100vmax;
 }
 
-.homzhub-desktop .seemless {
+.seemless {
   background: url(../img/homzhub/seemless.png) no-repeat;
   background-size: contain;
   height: 80vmax;
 }
 
-.homzhub-desktop .output {
+.output {
   background: url(../img/homzhub/output.png) no-repeat;
   background-size: contain;
   height: 50vmax;
 }
 
-.homzhub-desktop .homzhub-main {
+.homzhub-main {
   background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -607,5 +607,42 @@ section {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.duct-main {
+  background: url(../img/duct/Rectangle.png) no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right;
+  height: 70vmin;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.application {
+  background: url(../img/duct/application-desk.png) no-repeat;
+}
+
+.calender {
+  background: url(../img/duct/calender-desk.png) no-repeat;
+}
+
+.parameters {
+  background: url(../img/duct/parameters-desk.png) no-repeat;
+}
+
+.cta {
+  background: url(../img/duct/cta-desk.png) no-repeat;
+  height: 70vh;
+}
+
+.bg-top-right {
+  background-position: top right;
+  background-size: contain;
+  height: 60vh;
+  margin-top: 100px;
+  padding-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

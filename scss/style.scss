@@ -581,7 +581,7 @@ h5 {
 
 // homzbub desktop css
 
-.homzhub-desktop{
+
   .wireframe{
     background: url(../img/homzhub/wireframes.png) no-repeat;
     background-size: cover;
@@ -635,6 +635,8 @@ h5 {
     height: 50vmax
   }
 
+
+
   .homzhub-main{
     background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
     background-size: contain;
@@ -647,4 +649,45 @@ h5 {
     right: 0;
   }
 
-}
+  .duct-main{
+  
+    background: url(../img/duct/Rectangle.png) no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right;
+    height: 70vmin;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
+
+  .application{
+    background: url(../img/duct/application-desk.png) no-repeat;
+
+  }
+
+  .calender{
+    background: url(../img/duct/calender-desk.png) no-repeat;
+
+  }
+
+  .parameters{
+    background: url(../img/duct/parameters-desk.png) no-repeat;
+
+  }
+
+  .cta{
+    background: url(../img/duct/cta-desk.png) no-repeat;
+    height: 70vh;
+  }
+
+  .bg-top-right{
+    background-position: top right;
+    background-size: contain;
+    height: 60vh;
+    margin-top: 100px;
+    padding-top: 40px
+  }

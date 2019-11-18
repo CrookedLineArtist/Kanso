@@ -134,6 +134,8 @@ a{
         }
       }
       h4{
+        font-size: 24px;
+        line-height: 30px;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -289,8 +291,9 @@ h3 {
 
 h4 {
   
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 34px;
+  line-height: 60px;
+
   margin-top: 16px;
   font-weight: 600;
   @media screen and (max-width: $trigger-screen) {
@@ -637,17 +640,23 @@ h5 {
 
 
 
+
+ 
+
   .homzhub-main{
     background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
     background-size: contain;
     background-attachment: fixed;
     background-position: right;
-    height: 80vmin;
+    height: 90%;
     width: 35%;
     position: absolute;
     top: 0;
     right: 0;
   }
+
+
+
 
   .duct-main{
   
@@ -655,7 +664,7 @@ h5 {
     background-size: contain;
     background-attachment: fixed;
     background-position: right;
-    height: 70vmin;
+    height: 90%;
     width: 35%;
     position: absolute;
     top: 0;
@@ -690,4 +699,51 @@ h5 {
     height: 60vh;
     margin-top: 100px;
     padding-top: 40px
+  }
+
+
+  .law-main{
+  
+    background: url(../img/law/law-wallpaper.png) no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right ;
+    height: 90%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
+
+  .law-wireframe  {
+    background: url(../img/law/wireframes.png) no-repeat;
+    background-size: 50vmax;
+    background-attachment: fixed;
+    background-position: right ;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .info-text-red{
+    max-width: 40%;
+    color: #C44E4E;
+  }
+
+  
+  .law-mockup{
+
+    margin-top: 100px;
+    position: absolute;
+
+    background: url(../img/law/mockup-2.png) no-repeat;
+    height: 60%;
+    width: 100%;
+    background-size: contain;
+    right: 0%;
+    background-position: right ;
   }

@@ -60,8 +60,8 @@
 }
 
 .case-1 .inside-box .duct-img {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
 @media only screen and (max-width: 900px) {
@@ -71,19 +71,7 @@
   }
 }
 
-.case-1 .inside-box .duct-img .screen {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .case-1 .inside-box .duct-img .screen img {
-  max-width: 30vmax;
-}
-
-@media only screen and (max-width: 900px) {
-  .case-1 .inside-box .duct-img .screen img {
-    max-width: 100vmin;
-  }
+  max-width: 10vmax;
 }
 /*# sourceMappingURL=duct.css.map */

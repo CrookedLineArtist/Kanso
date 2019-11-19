@@ -261,7 +261,7 @@ section {
   width: 100%;
   padding-top: 100px;
   position: relative;
-  min-height: 60vmin;
+  min-height: 65vmin;
 }
 
 @media screen and (max-width: 700px) {

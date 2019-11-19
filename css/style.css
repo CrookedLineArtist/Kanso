@@ -124,19 +124,6 @@ a :hover {
   color: #1c1c1c;
 }
 
-#work .grid-container div:hover::before {
-  content: " ";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 5%;
-  left: 5%;
-  z-index: 1;
-  background: url(../img/kanso/eye.svg) no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 #work .grid-container div h4 {
   font-size: 24px;
   line-height: 30px;
@@ -216,6 +203,10 @@ p {
   max-width: 500px;
   line-height: 1.6em;
   margin-bottom: 1.5em;
+}
+
+p small {
+  font-size: 16px;
 }
 
 h2 {
@@ -513,13 +504,14 @@ section {
 .bg-bottom::before {
   content: " ";
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0%;
   left: 0%;
   z-index: -1;
   background: url(../img/bg.png) no-repeat;
   background-size: cover;
+  background-position: bottom;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -532,9 +524,8 @@ section {
 
 #approach {
   background: url(../img/kanso/approach/bg.svg) no-repeat;
-  background-size: contain;
+  background-size: 40vmax;
   background-position: right center;
-  background-attachment: fixed;
 }
 
 .video-bg {
@@ -550,8 +541,7 @@ section {
   background: url(../img/homzhub/wireframes.png) no-repeat;
   background-size: cover;
   background-position: right center;
-  background-attachment: fixed;
-  height: 40vmax;
+  height: 400px;
 }
 
 .top-vs-side {
@@ -591,10 +581,9 @@ section {
 .homzhub-main {
   background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
   background-size: contain;
-  background-attachment: fixed;
   background-position: right;
   height: 90%;
-  width: 35%;
+  width: 55%;
   position: absolute;
   top: 0;
   right: 0;
@@ -639,8 +628,7 @@ section {
 
 .law-main {
   background: url(../img/law/law-wallpaper.png) no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
+  background-size: 60vw;
   background-position: right;
   height: 90%;
   width: 35%;

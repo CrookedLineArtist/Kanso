@@ -1,5 +1,6 @@
 .case-1 .inside-box {
   margin-top: 10vmin;
+  background: linear-gradient(341.91deg, #F1F1F1 5%, rgba(248, 248, 248, 0) 68.23%);
 }
 
 @media only screen and (max-width: 800px) {
@@ -9,7 +10,8 @@
 }
 
 .case-1 .inside-box .page {
-  margin: 5vmin;
+  max-width: 1200px;
+  margin: 5vmin auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -26,9 +28,6 @@
 
 .case-1 .inside-box .page div {
   padding: 8vmin;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -37,26 +36,15 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .case-1 .inside-box .page .screen {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
+.case-1 .inside-box .page .screen {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .case-1 .inside-box .page .screen img {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   border-radius: 5px;
-  -webkit-box-shadow: 30px 30px 2px #F8F8F8;
-          box-shadow: 30px 30px 2px #F8F8F8;
-  border: 1px #eeeeee solid;
-}
-
-.case-1 .inside-box .page .screen img:hover {
-  -webkit-box-shadow: 20px 20px 1px #F8F8F8;
-          box-shadow: 20px 20px 1px #F8F8F8;
+  border: 1px #d4d4d4 solid;
 }
 
 .case-1 .inside-box .duct-img {

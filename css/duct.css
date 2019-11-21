@@ -10,7 +10,7 @@
 }
 
 .case-1 .inside-box .page {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 5vmin auto;
   display: -ms-grid;
   display: grid;
@@ -61,5 +61,16 @@
 
 .case-1 .inside-box .duct-img .screen img {
   max-width: 10vmax;
+}
+
+.duct-main {
+  background: url(../img/duct/Rectangle.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 95%;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=duct.css.map */

@@ -14,7 +14,7 @@
   
   
       .page{
-        max-width: 1200px;
+        max-width: 1250px;
         margin: 5vmin auto;
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -60,4 +60,19 @@
   
   
   
+  }
+
+
+  .duct-main{
+  
+    background: url(../img/duct/Rectangle.png) no-repeat;
+    background-size: contain;
+
+    background-position: right;
+    height: 95%;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
   }

@@ -511,21 +511,9 @@ section {
   right: 0;
 }
 
-.duct-main {
-  background: url(../img/duct/Rectangle.png) no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: right;
-  height: 90%;
-  width: 35%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .law-main {
   background: url(../img/law/law-wallpaper.png) no-repeat;
-  background-size: 40vw;
+  background-size: 800px;
   background-position: right;
   height: 90%;
   width: 35%;

@@ -24,8 +24,13 @@
     x.classList.toggle("change");
   }
 
-  var page = "";
+  
 
+
+
+  // page redirect according to window size
+
+  var page = "";
   function pageChange(page){
     
     var murl = page + "m.html" ;

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 // font-family: 'Barlow Semi Condensed', sans-serif;
 
@@ -35,7 +34,7 @@ $trigger-screen: 700px;
 
 
 .wide-view {
-  
+
 
   @media screen and (max-width: $trigger-screen) {
 
@@ -43,10 +42,11 @@ $trigger-screen: 700px;
   }
 }
 
-a{
-  color:#1a1a1a;
-  :hover{
-    color:#DE4F4F;
+a {
+  color: #1a1a1a;
+
+  :hover {
+    color: #DE4F4F;
     text-decoration: none;
   }
 
@@ -55,7 +55,8 @@ a{
 
 @mixin linear-gradient-alt($alt-color) {
   background: linear-gradient(55deg, $alt-color, 80%, rgba(255, 255, 255, 0.637) 170%);
-  &:hover{
+
+  &:hover {
     background: linear-gradient(55deg, $alt-color, 30%, rgba(255, 255, 255, 0.2) 170%);
   }
 }
@@ -85,10 +86,11 @@ a{
   @include linear-gradient-alt(rgb(204, 204, 204));
 }
 
-.e-com{
+.e-com {
   @include linear-gradient-alt(#DE4F4F);
 }
-.soon{
+
+.soon {
   @include linear-gradient-alt(black);
 }
 
@@ -104,20 +106,21 @@ a{
 
 
     @media screen and (min-width: 900px) {
-        max-width: 1200px;
-        margin: 0 auto;
-        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     }
 
 
-    
-    
+
+
 
     div {
       padding: 1em;
       position: relative;
       color: #fdfdfd;
-      &:hover{
+
+      &:hover {
         color: #1c1c1c;
         // &::before {
         //   content: " ";
@@ -130,10 +133,11 @@ a{
         //   background: url(../img/kanso/eye.svg) no-repeat;
         //   background-size: contain;
         //   background-position:  center;
-          
+
         // }
       }
-      h4{
+
+      h4 {
         font-size: 22px;
         line-height: 24px;
         position: absolute;
@@ -142,13 +146,18 @@ a{
         padding: 18px;
         text-transform: uppercase;
         font-weight: 700;
-        small{
+
+        small {
           font-weight: 200;
+
+          b {
+            font-weight: 700;
+          }
         }
 
       }
 
-      
+
     }
   }
 }
@@ -208,24 +217,24 @@ a{
 /* width */
 ::-webkit-scrollbar {
   width: 2px;
-  height:1px
+  height: 1px
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px grey; 
+  box-shadow: inset 0 0 1px grey;
   border-radius: 3px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: red;
   border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #b30000;
 }
 
 
@@ -240,7 +249,7 @@ a{
   padding: 0;
   //border: 1px grey solid;
   transition: all 0.1s ease;
-  
+
 
 }
 
@@ -248,13 +257,14 @@ a{
 
 body,
 html {
-  
-  
+
+
   scroll-behavior: smooth;
   position: relative;
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: #1d1d1dd6;
-  
+  overflow-x: hidden;
+
 
 }
 
@@ -266,63 +276,69 @@ p {
   line-height: 1.6em;
   margin-bottom: 1.5em;
   font-size: 18px;
-  small{
+
+  small {
     font-size: 16px;
   }
-  
+
 }
 
 h2 {
-  
+
   text-transform: uppercase;
   font-size: 40px;
   max-width: 830px;
-  
+
   letter-spacing: 0.01em;
   font-weight: 700;
 }
 
 h3 {
-  
+
   text-transform: uppercase;
   line-height: 48px;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 0.10em;
-  
+
 
 
 }
 
 h4 {
-  
-  font-size: 34px;
 
-
+  font-size: 32px;
+  line-height: 45px;
   margin-top: 16px;
   font-weight: 600;
+
   @media screen and (max-width: $trigger-screen) {
     font-size: 24px;
   }
-  small{
+
+  small {
     text-transform: capitalize;
+
   }
 
-  
+
+
 }
+
 h5 {
   font-family: 'Barlow ', sans-serif;
   font-size: 16px;
-  
+
   line-height: 22px;
   margin-top: 16px;
   margin-bottom: 2px;
   font-weight: 300;
+
   @media screen and (max-width: 900px) {
     font-size: 14px;
   }
 
-  
+
 }
 
 
@@ -330,20 +346,20 @@ h5 {
 
 
 
-  section {
-    width: 100%;
-    padding-top: 100px ; 
-    position: relative;
-    min-height: 65vmin;
+section {
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+  min-height: 65vmin;
 
-    .container{
-      @media screen  and (max-width:$trigger-screen){
-        padding: 10vmax;
-      
-      }
+  .container {
+    @media screen and (max-width:$trigger-screen) {
+      padding: 10vmax;
+
     }
-    
-    
+  }
+
+
 }
 
 
@@ -372,7 +388,7 @@ h5 {
 
 
 
-.bg-transperent{
+.bg-transperent {
   background-color: rgba(255, 255, 255, 0.961);
 }
 
@@ -388,40 +404,52 @@ h5 {
 
 
 // loading.css
-.page-loaded{
+.page-loaded {
   visibility: hidden;
 }
 
-.logo-loading{
+.logo-loading {
   padding: 50px;
 }
 
 .loader {
-  display: flex ;
-  justify-content: center ;
-  align-items: center ;
-  min-height: 100vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
 }
+
 .circle {
   display: inline-block;
-  width: 3px ;
-  height: 40px ;
-  border-radius: 2px ;
-  margin: 0px 5px ;
-  animation: wave 1.5s ease-in-out infinite ;
+  width: 3px;
+  height: 40px;
+  border-radius: 2px;
+  margin: 0px 5px;
+  animation: wave 1.5s ease-in-out infinite;
 
-  .circle-1 { animation-delay: 0ms }
-  .circle-2 { animation-delay: 200ms }
-  .circle-3 { animation-delay: 400ms }
+  .circle-1 {
+    animation-delay: 0ms
+  }
+
+  .circle-2 {
+    animation-delay: 200ms
+  }
+
+  .circle-3 {
+    animation-delay: 400ms
+  }
 }
 
 @keyframes wave {
   30% {
-    background-color: rgb(240, 240, 240) ;
+    background-color: rgb(240, 240, 240);
   }
-  0% , 60% , 100% {
-    background-color:rgb(218, 218, 218) ;
+
+  0%,
+  60%,
+  100% {
+    background-color: rgb(218, 218, 218);
   }
 }
 
@@ -429,11 +457,11 @@ h5 {
 
 
 
-.vw-inside{
+.vw-inside {
   max-width: 1400px;
 
   margin: 0 auto;
-  
+
   // @media screen and (min-width: $trigger-screen) {
   //   padding: 0.5em;
   //   padding-top: 200px ; 
@@ -450,11 +478,13 @@ h5 {
 
 
 
-.margin-top-minus{
+.margin-top-minus {
   margin-top: -280px;
+
   @media screen and (min-width: 700) {
     margin-top: -6000px;
   }
+
   @media screen and (min-width: 1300) {
     margin-top: -850px;
   }
@@ -464,13 +494,14 @@ h5 {
 #banner {
   height: 100vh;
   position: relative;
-  .container{
+
+  .container {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
- 
+
   .bg {
 
 
@@ -484,10 +515,10 @@ h5 {
       z-index: -1;
       background: url(../img/bg.png) no-repeat;
       background-size: cover;
-      background-position:  center;
+      background-position: center;
 
     }
-}
+  }
 }
 
 
@@ -497,8 +528,9 @@ h5 {
   width: 100vw;
   height: 100vh;
   margin-bottom: -100vh;
-  
+
   z-index: -1;
+
   &::before {
     content: " ";
     position: absolute;
@@ -509,11 +541,12 @@ h5 {
     z-index: -1;
     background: url(../img/bg.png) no-repeat;
     background-size: cover;
-    background-position:  center;
-    
+    background-position: center;
+
   }
 }
-.bg-bottom{
+
+.bg-bottom {
 
 
   &::before {
@@ -529,53 +562,53 @@ h5 {
     background-position: bottom;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-  
-    
+
+
   }
 
 }
 
 
 
-#process{
-  .container{
-    @media screen and (max-width:900px){
-      img{
+#process {
+  .container {
+    @media screen and (max-width:900px) {
+      img {
         max-width: 400px;
       }
     }
 
-          
 
-        }
+
   }
-
-
-
-
-#approach{
-
-  background: url(../img/kanso/approach/bg.svg) no-repeat;
-    background-size: 40vmax;
-    background-position: right center;
-
-
-
-  
 }
 
-.video-bg{
-
-    background: url(https://media.giphy.com/media/fC6BAcnLFF2o/giphy.gif) no-repeat;
-    background-size: cover;
-    background-position: right center;
-    background-attachment: fixed;
-
-    width: 100vw;
-    height: 100vh;
 
 
-  
+
+#approach {
+
+  background: url(../img/kanso/approach/bg.svg) no-repeat;
+  background-size: 40vmax;
+  background-position: right center;
+
+
+
+
+}
+
+.video-bg {
+
+  background: url(https://media.giphy.com/media/fC6BAcnLFF2o/giphy.gif) no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+
+
 }
 
 
@@ -589,122 +622,183 @@ h5 {
 // homzbub desktop css
 
 
-  .wireframe{
-    background: url(../img/homzhub/wireframes.png) no-repeat;
-    background-size: cover;
-    background-position: right center;
-    height: 400px;
+.wireframe {
+  background: url(../img/homzhub/wireframes.png) no-repeat;
+  background-size: cover;
+  background-position: right center;
+  height: 400px;
 
 
+}
+
+.top-vs-side {
+
+
+
+  background: url(../img/homzhub/top-vs-side.svg) no-repeat;
+  background-size: auto;
+  background-position: right;
+}
+
+.para {
+  max-width: 300px;
+}
+
+
+.post {
+  min-height: 960px;
+
+  img {
+    max-width: 1200px;
+    margin-top: 50px;
   }
+}
 
-  .top-vs-side{
 
 
-    
-    background: url(../img/homzhub/top-vs-side.svg) no-repeat;
-    background-size: auto;
-    background-position: right;
+.post-dashboard {
+
+  min-height: 1060px;
+
+  img {
+    max-width: 1200px;
+    margin-top: 50px;
   }
-
-  .para{
-    max-width: 300px;
-  }
-
-
-  .post{
-    background: url(../img/homzhub/post%20easy-desk.png) no-repeat;
-    background-size: contain;
-    height: 80vmax;
-
-
-  }
-
-  .post-dashboard{
-    background: url(../img/homzhub/Owner%20dashboard.png) no-repeat;
-    background-size: cover;
-    height: 100vmax;
-
-  }
-
-  .seemless{
-    background: url(../img/homzhub/seemless.png) no-repeat;
-    background-size: contain;
-    height: 80vmax
-  }
-
-
-  .output{
-    background: url(../img/homzhub/output.png) no-repeat;
-    background-size: contain;
-    height: 50vmax
-  }
+}
 
 
 
 
- 
 
-  .homzhub-main{
-    background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
-    background-size: contain;
-    background-position: right;
-    height: 90%;
-    width: 55%;
+
+
+
+.homzhub-main {
+  background: url(../img/homzhub/homzbub-main-1.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 90%;
+  width: 55%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+.law-main {
+
+  background: url(../img/law/law-wallpaper.png) no-repeat;
+  background-size: 800px;
+
+  background-position: right;
+  height: 90%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+
+.law-wireframe {
+  background: url(../img/law/wireframes.png) no-repeat;
+  background-size: 50vmax;
+  background-attachment: fixed;
+  background-position: right;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.info-text-red {
+  max-width: 40%;
+  color: #C44E4E;
+}
+
+
+.law-mockup {
+
+  margin-top: 100px;
+  position: absolute;
+
+  background: url(../img/law/mockup-2.png) no-repeat;
+  height: 60%;
+  width: 100%;
+  background-size: contain;
+  right: 3%;
+  background-position: right;
+}
+
+
+.cut-out-dark-blue {
+  position: absolute;
+  width: 150%;
+  height: 292.65px;
+  left: -110.56px;
+  margin-top: 300px;
+  z-index: -3;
+
+  background: #00445C;
+  transform: rotate(-16deg);
+
+}
+
+
+.cut-out-light-blue-r {
+  z-index: -30;
+  min-height: 650px;
+  background: rgba(0, 166, 224, 0.99);
+  clip-path: polygon(0 0, 100% 30%, 100% 75%, 0 50%);
+
+}
+
+
+
+
+.cut-out-light-grey {
+
+  position: absolute;
+  width: 150%;
+  height: 292.65px;
+  left: -110.56px;
+  margin-top: 600px;
+  z-index: -3;
+
+
+  background: #FAFAFA;
+  transform: rotate(16deg);
+
+}
+
+
+.cut-out-light-blue {
+  position: absolute;
+  width: 150%;
+  height: 292.65px;
+  left: -110.56px;
+  margin-top: 300px;
+  z-index: -3;
+
+  background: rgba(0, 166, 224, 0.99);
+  ;
+  transform: rotate(-16deg);
+}
+
+
+.output-img{
+
+  img{
     position: absolute;
-    top: 0;
-    right: 0;
+    z-index: 1;
+    right: 0px;
   }
 
-
-
-
-
-
-
-
-  .law-main{
-  
-    background: url(../img/law/law-wallpaper.png) no-repeat;
-    background-size: 800px ;
-
-    background-position: right ;
-    height: 90%;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-  }
-
-
-  .law-wireframe  {
-    background: url(../img/law/wireframes.png) no-repeat;
-    background-size: 50vmax;
-    background-attachment: fixed;
-    background-position: right ;
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .info-text-red{
-    max-width: 40%;
-    color: #C44E4E;
-  }
-
-  
-  .law-mockup{
-
-    margin-top: 100px;
-    position: absolute;
-
-    background: url(../img/law/mockup-2.png) no-repeat;
-    height: 60%;
-    width: 100%;
-    background-size: contain;
-    right: 3%;
-    background-position: right ;
-  }
+}

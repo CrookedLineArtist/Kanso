@@ -56,7 +56,7 @@ block case-study
         .my-5
 
 
-    .container.pt-5 
+    .container.py-5 
         .py-5
             .top-vs-side
                 .para
@@ -69,24 +69,41 @@ block case-study
 
 
 
-    .output
-        .container
-            .py-5.position-absolute
-                .para.text-white
-                    h4 
-                        small 
-                            b Output
-
-                    p With a client adamant on having a side navigation system we strived for a better understanding. Our platform was more focused with limited topics of interest. A traditional top navigation is easier to scan and use. Thus being better suited.
 
 
-        
+
+
+    .position-realtive
+        .output-img
+            img(src="img/homzhub/output.png",width="65%", alt="")
+
+        .output.py-5.cut-out-light-blue-r
+            .container
+                .m-2
+                .py-5
+                    .text-white
+                        h4 
+                            small 
+                                b Output
+
+                        p With a client adamant on having a side navigation system we strived for a better understanding. Our platform was more focused with limited topics of interest. A traditional top navigation is easier to scan and use. Thus being better suited.
+
+
+
     
+        
 
 
 
-    .post
-        .container 
+    .post.position-realtive.my-2
+
+
+        .cut-out-dark-blue
+        .container
+
+            .position-absolute
+                img(src="img/homzhub/post easy-1-2-3.png", alt="post easy", srcset="")
+
             .py-5
                 .para
                     h4 
@@ -94,34 +111,40 @@ block case-study
                             b Post a property with ease
 
                     p The most crucial and longest process to the portal made easy. All information is fed to the user in small chunks to make it seem simple and short. These chunks help maintain the focus on particular information group.
+        
 
-                img(src="img/homzhub/post easy-1-2-3.png", alt="post easy", width="60%" srcset="")
+    .m-5
+    .seemless.my-5.position-realtive
 
 
+        .cut-out-light-grey
+        .container
+            
+            img(src="img/homzhub/seemless.svg", alt="post easy", width="100%", srcset="")
 
-    .seemless.my-5
-        .container 
-            .py-5
-                .para
-                    h4 
-                        small 
-                            b Seemless owner -tenant connect
-
-                    p Mainly used by people with off shore properties, it required a communication between owner and tenant. An inbuilt widget system enabled that. The tenant and owner could connect and schedule visits or negotiate rent without having to ever call each other.
+            //- .py-5
+                
+            //-     h4 
+            //-         small 
+            //-             b Seemless owner-tenant connect
+            //-     .para
+            //-         p Mainly used by people with off shore properties, it required a communication between owner and tenant. An inbuilt widget system enabled that. The tenant and owner could connect and schedule visits or negotiate rent without having to ever call each other.
 
 
 
 
         
 
+    
+    .post-dashboard.position-realtive.my-5
 
 
+        .cut-out-light-blue
+        .container
 
+            .position-absolute
+                img(src="img/homzhub/Owner%20dashboard.png", alt="post easy", srcset="")
 
-
-
-    .post-dashboard
-        .container 
             .py-5
                 .para
                     h4 
@@ -129,6 +152,12 @@ block case-study
                             b Comprehensive dashboard
 
                     p An owner can keep track of the properties and the finances. The tenant can keep a track of the viewed properties and later also keep a track of the finances of a rented one.
+        
+
+
+
+
+
 
             
 

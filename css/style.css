@@ -133,6 +133,7 @@ a :hover {
   padding: 18px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.07em;
 }
 
 #work .grid-container div h4 small {
@@ -140,7 +141,7 @@ a :hover {
 }
 
 #work .grid-container div h4 small b {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @-webkit-keyframes page-trasition {
@@ -227,13 +228,13 @@ h3 {
   text-transform: uppercase;
   line-height: 48px;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.10em;
 }
 
 h4 {
   font-size: 32px;
-  line-height: 45px;
+  line-height: 38px;
   margin-top: 16px;
   font-weight: 600;
 }
@@ -246,6 +247,7 @@ h4 {
 
 h4 small {
   text-transform: capitalize;
+  line-height: 26px;
 }
 
 h5 {
@@ -511,6 +513,17 @@ section {
   background-position: right;
   height: 90%;
   width: 55%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ecom-main {
+  background: url(../img/law/law-wallpaper.png) no-repeat;
+  background-size: 800px;
+  background-position: right;
+  height: 110%;
+  width: 35%;
   position: absolute;
   top: 0;
   right: 0;

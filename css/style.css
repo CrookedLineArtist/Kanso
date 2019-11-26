@@ -584,8 +584,8 @@ section {
   z-index: -30;
   min-height: 650px;
   background: rgba(0, 166, 224, 0.99);
-  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 75%, 0 50%);
-          clip-path: polygon(0 0, 100% 30%, 100% 75%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
+          clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
 }
 
 .cut-out-light-grey {

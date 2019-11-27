@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900&display=swap");
 .vw-100 {
   margin: 0 auto;
   width: 100%;
@@ -205,11 +206,11 @@ html {
 }
 
 p {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Rubik', sans-serif;
   max-width: 500px;
   line-height: 1.6em;
   margin-bottom: 1.5em;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p small {
@@ -588,6 +589,15 @@ section {
           clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
 }
 
+.output-mobile .px-5 {
+  margin-top: -350px;
+  margin-bottom: 200px;
+}
+
+.output-mobile .mb-3 img {
+  z-index: 1;
+}
+
 .cut-out-light-grey {
   position: absolute;
   width: 150%;
@@ -616,5 +626,23 @@ section {
   position: absolute;
   z-index: 1;
   right: 0px;
+}
+
+.case-study-font h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 118.7%;
+  text-transform: capitalize;
+}
+
+.case-study-font h4 {
+  font-size: 24px;
+  line-height: 118.7%;
+}
+
+.case-study-font p {
+  line-height: 162.8%;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

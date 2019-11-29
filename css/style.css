@@ -248,7 +248,7 @@ h4 {
 
 h4 small {
   text-transform: capitalize;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 h5 {
@@ -607,8 +607,8 @@ section {
   z-index: -30;
   min-height: 650px;
   background: rgba(0, 166, 224, 0.99);
-  -webkit-clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
-          clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 100% 45%, 100% 95%, 0 55%);
+          clip-path: polygon(0 0, 100% 45%, 100% 95%, 0 55%);
 }
 
 .output-mobile .px-5 {
@@ -644,10 +644,14 @@ section {
           transform: rotate(-16deg);
 }
 
+.output-img {
+  position: relative;
+}
+
 .output-img img {
   position: absolute;
   z-index: 1;
-  right: 0px;
+  right: -10%;
 }
 
 .case-study-font h3 {

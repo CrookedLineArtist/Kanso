@@ -320,7 +320,7 @@ h4 {
 
   small {
     text-transform: capitalize;
-    line-height: 26px;
+    line-height: 28px;
 
   }
 
@@ -608,6 +608,7 @@ section {
   // background-attachment: fixed;
   z-index: 0;
   position: relative;
+
   .play-pause{
     position: absolute;
     left: 50%;
@@ -790,7 +791,7 @@ section {
   z-index: -30;
   min-height: 650px;
   background: rgba(0, 166, 224, 0.99);
-  clip-path: polygon(0 0, 100% 40%, 100% 85%, 0 50%);
+  clip-path: polygon(0 0, 100% 45%, 100% 95%, 0 55%);
 
 
 }
@@ -842,11 +843,13 @@ section {
 
 
 .output-img{
+  position: relative;
 
   img{
     position: absolute;
     z-index: 1;
-    right: 0px;
+    right: -10%;
+
   }
 
 }

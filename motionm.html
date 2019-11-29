@@ -40,7 +40,17 @@
       </div>
     </nav>
     <div class="bg"></div>
-    <div class="video-bg"></div>
+    <div class="video-bg" onclick="playPause()">
+      <video id="video1" autoplay="autoplay">
+        <source src="img/showreel.mp4" type="video/mp4"/>  Your browser does not support the video tag.
+      </video>
+      <div class="play-pause">
+        <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="28" r="28" fill="white"></circle>
+          <path d="M38.1897 28.1898L22.8115 17.9581V38.8116L38.1897 28.1898Z" fill="#F52D01"></path>
+        </svg>
+      </div>
+    </div>
     <div class="p-5">
       <h4>Motion Graphics showreel</h4>
       <p>We helped the client with visual design of their ecommerce platforms with various clients while working hand in hand with their technical teams.</p>
@@ -55,13 +65,13 @@
           <h4>Homzhub <br/><small>DESKTOP  </small></h4>
         </div>
         <div class="duct" onclick="pageChange('duct')">
-          <h4>Duct Test App <br/><small>TABLET APPLICATION</small></h4>
+          <h4>Duct Test Application Redesign <br/><small>TABLET APPLICATION</small></h4>
         </div>
         <div class="motion" onclick="pageChange('motion')">
           <h4>Motion Graphics Showreel <br/><small>VIDEO</small></h4>
         </div>
         <div class="law" onclick="pageChange('law')">
-          <h4>RIVERUS Law Analyics <br/><small>DESKTOP</small></h4>
+          <h4>RIVERUS Law Analytics <br/><small>DESKTOP</small></h4>
         </div>
         <div class="shop" onclick="pageChange('e-commerce')">
           <h4> e-commerce</h4>

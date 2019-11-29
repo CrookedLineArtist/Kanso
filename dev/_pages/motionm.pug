@@ -1,8 +1,17 @@
 extends ../_extends/case.pug
 block case-study
 
-    
-    .video-bg
+
+    .video-bg(onclick="playPause()")
+        video( id="video1"  autoplay)
+            source(src='img/showreel.mp4' type='video/mp4')
+            |   Your browser does not support the video tag.
+
+        .play-pause
+            svg(width='56' height='56' viewbox='0 0 56 56' fill='none'   xmlns='http://www.w3.org/2000/svg')
+                circle(cx='28' cy='28' r='28' fill='white')
+                path(d='M38.1897 28.1898L22.8115 17.9581V38.8116L38.1897 28.1898Z' fill='#F52D01')
+                            
 
     .p-5
 

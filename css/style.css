@@ -279,6 +279,15 @@ section {
   }
 }
 
+#services h4 {
+  font-size: 24px;
+}
+
+#services h5 {
+  font-size: 14px;
+  max-width: 250px;
+}
+
 .contact {
   display: -ms-grid;
   display: grid;

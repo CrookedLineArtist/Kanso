@@ -365,7 +365,28 @@ section {
 
 }
 
+#services{
 
+  // .border-service{
+  //   border-left: #EAEAEA 1px solid;
+  //   border-right: #EAEAEA 1px solid;
+  //   margin: 0 auto;
+  //   padding: 0 50px;
+
+  //   @media screen and (max-width: $trigger-screen) {
+  //     border-left: #EAEAEA 0px solid;
+  //     border-right: #EAEAEA 0px solid;
+  //   }
+  // }
+  h4{
+    font-size: 24px;
+  }
+
+  h5{
+    font-size: 14px;
+    max-width: 250px;
+  }
+}
 
 // footer
 .contact {

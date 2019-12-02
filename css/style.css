@@ -288,6 +288,28 @@ section {
   max-width: 250px;
 }
 
+#we p small {
+  font-family: 'Barlow ', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#we h5 {
+  font-family: 'Barlow ', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+#we h5 b a {
+  color: #1a1a1a;
+}
+
+#we h5 b a :hover {
+  color: #DE4F4F;
+  text-decoration: none;
+}
+
 .contact {
   display: -ms-grid;
   display: grid;
@@ -476,6 +498,7 @@ section {
 .video-bg {
   z-index: 0;
   position: relative;
+  background: #000000;
 }
 
 .video-bg .play-pause {
@@ -489,7 +512,7 @@ section {
 
 .video-bg video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .motion-text {
@@ -497,6 +520,7 @@ section {
   margin-top: -120px;
   margin-bottom: 100px;
   z-index: 3;
+  background: linear-gradient(20deg, #000000 10%, rgba(0, 0, 0, 0) 100%);
 }
 
 .motion-text h6 {

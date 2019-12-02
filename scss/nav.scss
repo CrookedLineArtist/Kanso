@@ -3,15 +3,15 @@ $trigger-screen: 700px;
 .navbar {
 
 
-    .nav-pills{
-        .nav-item{
-            .nav-link{
-                &:active{
-                    background-color: black;
-                }
-            }
-        }
-    }
+    // .nav-pills{
+    //     .nav-item{
+    //         .nav-link{
+    //             &:active{
+    //                 background: white;
+    //             }
+    //         }
+    //     }
+    // }
 
 
 
@@ -31,6 +31,7 @@ $trigger-screen: 700px;
           &:hover{
             color: rgb(223, 6, 6);
           }
+
       }
 
 

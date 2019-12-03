@@ -1,7 +1,7 @@
 
 
 nav#navbar.navbar.fixed-top.navbar-expand-md.d-flex
-    button.navbar-toggler( onclick='menuButtonToggle(this)' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+    button.navbar-toggler( onclick='menuButtonToggle(this)'  data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
         span
           .bar1
           .bar2
@@ -20,15 +20,15 @@ nav#navbar.navbar.fixed-top.navbar-expand-md.d-flex
     #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
         ul.nav.nav-pills
           li.nav-item
-            a.nav-link(href='#services') SERVICES
+            a.nav-link(href='#services'  onclick='menuButtonToggle()') SERVICES
           li.nav-item 
-            a.nav-link(href='#approach') APPROACH 
+            a.nav-link(href='#approach' onclick='menuButtonToggle()') APPROACH 
           li.nav-item 
-            a.nav-link(href='#process') PROCESS
+            a.nav-link(href='#process' onclick='menuButtonToggle()') PROCESS
           li.nav-item 
-            a.nav-link(href='#work') OUR WORK
+            a.nav-link(href='#work' onclick='menuButtonToggle()') OUR WORK
           li.nav-item 
-            a.nav-link(href='#we') WHO WE ARE
+            a.nav-link(href='#we' onclick='menuButtonToggle()') WHO WE ARE
 
 
 

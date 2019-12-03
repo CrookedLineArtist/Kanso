@@ -21,7 +21,7 @@
 
 
   function menuButtonToggle(x) {
-    x.classList.toggle("change");
+    $('#navbarNavAltMarkup').removeClass("show");
   }
 
   
@@ -54,3 +54,5 @@
         scrollTop: $(section).offset().top
     });
 });
+
+

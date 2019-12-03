@@ -28,18 +28,18 @@
   <body data-spy="scroll" data-target="#navbar" data-offset="0">
     <!--include  ../_include/loading.pug-->
     <nav class="navbar fixed-top navbar-expand-md d-flex" id="navbar">
-      <button class="navbar-toggler" onclick="menuButtonToggle(this)" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span>
+      <button class="navbar-toggler" onclick="menuButtonToggle(this)" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span>
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div></span></button><a class="navbar-brand" id="logo" href="index.html">
         <div class="align-top"><img src="./img/kanso.svg" alt="kanso logo" width="30" height="30"/></div></a>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#approach">APPROACH </a></li>
-          <li class="nav-item"> <a class="nav-link" href="#process">PROCESS</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#work">OUR WORK</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#we">WHO WE ARE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" onclick="menuButtonToggle()">SERVICES</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#approach" onclick="menuButtonToggle()">APPROACH </a></li>
+          <li class="nav-item"> <a class="nav-link" href="#process" onclick="menuButtonToggle()">PROCESS</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#work" onclick="menuButtonToggle()">OUR WORK</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#we" onclick="menuButtonToggle()">WHO WE ARE</a></li>
         </ul>
       </div>
     </nav>
@@ -180,7 +180,7 @@
         </picture>
       </div>
     </section>
-    <div class="mt-5 pt-5">
+    <div class="mt-5">
       <section id="work">
         <div class="container">
           <h3 class="pb-3">Our work</h3>
@@ -209,7 +209,7 @@
     </div>
     <div class="p-5"></div>
     <section class="pb-5 bg-bottom" id="we">
-      <div class="container">
+      <div class="container pb-5">
         <h3 class="pb-4 animated fadeInUp delay-2s">WHO WE ARE</h3>
         <p> <small>We are a young design agency based out of Pune with a unique outlook and a desire to impact the world around us. We,ve helped improve customer experiences in restaurants, created inspiring environments for children, made events seem grand, helped government platforms grow, and even worked with lawyers to build innovative products for their customers.</small></p>
         <p> <small>Does your brand seem dated or needs a facelift? Can’t seem to boost sales online? Need an online management tool or are you trying to just showcase your brand? Well that's what we do… we ensure to bring the best out of your brand. We strive to excel businesses and improve relations by providing high quality customised solutions to complex problems.</small></p>

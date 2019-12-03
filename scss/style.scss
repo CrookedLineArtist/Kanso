@@ -251,9 +251,16 @@ a {
   padding: 0;
   //border: 1px grey solid;
   transition: all 0.1s ease;
+  :focus{
+    outline-style:none;
+box-shadow:none;
+border-color:transparent;
+  }
 
 
 }
+
+
 
 
 

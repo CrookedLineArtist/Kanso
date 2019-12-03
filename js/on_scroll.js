@@ -19,8 +19,12 @@
     }
   }
 
-
   function menuButtonToggle(x) {
+    x.classList.toggle("change");
+   
+  }
+
+  function menuButtoToggle() {
     $('#navbarNavAltMarkup').removeClass("show");
   }
 

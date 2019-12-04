@@ -148,17 +148,16 @@ html(lang="en")
 
 
         section#process.mb-5
-            .container
+            .container.mb-5
 
                 //- img(src="img/kanso/process/process-desktop.svg", alt="search", width="100%" srcset="")
                         
-                //- h3.pb-5.animated.fadeInUp.delay-2s Process
+                h3.pb-5.mb-5.animated.fadeInUp.delay-2s Process
 
-                picture
-                    source(media='(max-width: 900px)' srcset='./img/kanso/process/process-mobile.svg')
-                    source(media='(min-width: 900px)',srcset='./img/kanso/process/process-desktop.svg')
-                    img(src=''  alt='process' )
-
+                .wide-view
+                    include  ../_include/process/process-desktop.pug
+                .mobile
+                    include  ../_include/process/process-mobile.pug
 
 
         .mt-5

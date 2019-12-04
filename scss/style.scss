@@ -25,7 +25,8 @@ $trigger-screen: 700px;
 
 
 .mobile {
-  width: 100vw;
+  width: 100%;
+
 
   @media screen and (min-width: $trigger-screen) {
     display: none;
@@ -35,7 +36,7 @@ $trigger-screen: 700px;
 
 .wide-view {
 
-
+  width: 100%;
   @media screen and (max-width: $trigger-screen) {
 
     display: none;
@@ -251,11 +252,7 @@ a {
   padding: 0;
   //border: 1px grey solid;
   transition: all 0.1s ease;
-  :focus{
-    outline-style:none;
-box-shadow:none;
-border-color:transparent;
-  }
+
 
 
 }
@@ -659,8 +656,14 @@ section {
   background-position: right center;
 
   height: 80vh;
-  
-  vertical-align: middle;
+  position: relative;
+
+  .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+  }
 
 
 

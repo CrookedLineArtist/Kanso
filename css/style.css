@@ -10,13 +10,17 @@
 }
 
 .mobile {
-  width: 100vw;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
   .mobile {
     display: none;
   }
+}
+
+.wide-view {
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -194,15 +198,6 @@ a :hover {
   padding: 0;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-}
-
-* :focus,
-*::before :focus,
-*::after :focus {
-  outline-style: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-color: transparent;
 }
 
 body,
@@ -507,7 +502,15 @@ section {
   background-size: 40vmax;
   background-position: right center;
   height: 80vh;
-  vertical-align: middle;
+  position: relative;
+}
+
+#approach .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .video-bg {

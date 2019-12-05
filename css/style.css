@@ -318,6 +318,14 @@ section {
   text-decoration: none;
 }
 
+#we .icons {
+  max-width: 250px;
+}
+
+#we .icons .icon :hover {
+  fill: red;
+}
+
 .contact {
   display: -ms-grid;
   display: grid;

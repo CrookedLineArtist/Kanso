@@ -424,6 +424,15 @@ section {
     
     }
   }
+  .icons{
+    max-width: 250px;
+    .icon{
+      
+      :hover{
+        fill: red;
+      }
+    }
+  }
 }
 
 

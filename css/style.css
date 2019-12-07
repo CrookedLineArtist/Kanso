@@ -504,12 +504,6 @@ section {
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 900px) {
-  #process .container img {
-    max-width: 400px;
-  }
-}
-
 #approach {
   background: url(../img/kanso/approach/bg.svg) no-repeat;
   background-size: 40vmax;

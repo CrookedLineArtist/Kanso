@@ -431,7 +431,10 @@ section {
     .icon{
       
       :hover{
-        fill: red;
+        element{
+          fill: red;
+        }
+        
       }
     }
   }

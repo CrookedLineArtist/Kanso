@@ -470,7 +470,12 @@ section {
 
 
 
-
+.main-logo{
+  max-width: 300px;
+  @media screen and (max-width: $trigger-screen) {
+    width: 80%;
+  }
+}
 
 
 

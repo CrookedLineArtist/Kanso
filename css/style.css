@@ -281,12 +281,6 @@ section {
   min-height: 65vmin;
 }
 
-@media screen and (max-width: 700px) {
-  section .container {
-    padding: 10vmax;
-  }
-}
-
 #services h4 {
   font-size: 24px;
 }
@@ -349,12 +343,23 @@ section {
   background-color: rgba(255, 255, 255, 0.961);
 }
 
-.main-logo {
+.logo {
+  position: relative;
+}
+
+.logo .container .main-logo {
+  position: absolute;
+  top: 50%;
+  left: 00%;
   max-width: 300px;
 }
 
+.logo .container .main-logo svg {
+  width: 100%;
+}
+
 @media screen and (max-width: 700px) {
-  .main-logo {
+  .logo .container .main-logo {
     width: 80%;
   }
 }

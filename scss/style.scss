@@ -362,12 +362,12 @@ section {
   position: relative;
   min-height: 65vmin;
 
-  .container {
-    @media screen and (max-width:$trigger-screen) {
-      padding: 10vmax;
+  // .container {
+  //   @media screen and (max-width:$trigger-screen) {
+  //     padding: 10vmax;
 
-    }
-  }
+  //   }
+  // }
 
 
 }
@@ -468,14 +468,29 @@ section {
 }
 
 
+.logo{
+  position: relative;
+  .container{
+    
 
+    .main-logo{
+      position: absolute;
+      top: 50%;
+      left: 00%;
 
-.main-logo{
-  max-width: 300px;
-  @media screen and (max-width: $trigger-screen) {
-    width: 80%;
+      max-width: 300px;
+
+      svg{
+        width: 100%;
+      }
+      @media screen and (max-width: $trigger-screen) {
+        width: 80%;
+      }
+    }
   }
 }
+
+
 
 
 
@@ -646,14 +661,6 @@ section {
 
   }
 
-}
-
-
-
-#process{
-  .mobile{
-    
-  }
 }
 
 

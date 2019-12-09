@@ -470,13 +470,14 @@ section {
 
 .logo{
   position: relative;
-  .container{
-    
 
+    height: 60vh;
+    position: relative;
     .main-logo{
       position: absolute;
       top: 50%;
       left: 00%;
+      transform: translate(0%, -50%);
 
       max-width: 300px;
 
@@ -488,7 +489,6 @@ section {
       }
     }
   }
-}
 
 
 

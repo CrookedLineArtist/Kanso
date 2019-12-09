@@ -209,11 +209,6 @@ html {
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: #1d1d1dd6;
   overflow-x: hidden;
-  cursor: url("/img/mouse.svg"), auto;
-}
-
-footer {
-  cursor: url("/img/mouse.svg"), auto;
 }
 
 p {

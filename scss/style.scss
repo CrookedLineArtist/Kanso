@@ -364,12 +364,12 @@ section {
   position: relative;
   min-height: 65vmin;
 
-  // .container {
-  //   @media screen and (max-width:$trigger-screen) {
-  //     padding: 10vmax;
+  .container {
+    @media screen and (max-width:$trigger-screen) {
+      padding: 10vmax;
 
-  //   }
-  // }
+    }
+  }
 
 
 }

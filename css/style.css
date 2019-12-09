@@ -200,6 +200,10 @@ a :hover {
   transition: all 0.1s ease;
 }
 
+*[onclick] {
+  cursor: pointer;
+}
+
 body,
 html {
   margin: 0;

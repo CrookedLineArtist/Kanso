@@ -355,13 +355,13 @@ section {
 
 .logo {
   position: relative;
-  height: 60vh;
+  height: 50vmin;
   position: relative;
 }
 
 .logo .main-logo {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 00%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
@@ -374,7 +374,7 @@ section {
 
 @media screen and (max-width: 700px) {
   .logo .main-logo {
-    width: 80%;
+    width: 100%;
   }
 }
 

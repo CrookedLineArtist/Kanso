@@ -634,7 +634,8 @@ section {
     width: 100vw;
     height: 100vh;
     top: 0%;
-    left: 10%;
+    left: 00%;
+
     @media screen and (max-width: $trigger-screen) {
       background-size: cover;
       background-position: left;
@@ -645,7 +646,7 @@ section {
     z-index: -1;
     background: url(../img/bg.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 
   }
 }
@@ -687,9 +688,12 @@ section {
 #approach {
 
   background: url(../img/kanso/approach/bg.svg) no-repeat;
-  background-size: 40vmax;
+  background-size: contain;
   background-position: right center;
-
+  @media screen and (max-width: $trigger-screen) {
+    background-size: 45vmin;
+    background-position: bottom right;
+  }
   height: 80vh;
   position: relative;
 

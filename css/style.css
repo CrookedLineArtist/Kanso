@@ -506,11 +506,11 @@ section {
   width: 100vw;
   height: 100vh;
   top: 0%;
-  left: 10%;
+  left: 00%;
   z-index: -1;
   background: url(../img/bg.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 @media screen and (max-width: 700px) {
@@ -546,10 +546,17 @@ section {
 
 #approach {
   background: url(../img/kanso/approach/bg.svg) no-repeat;
-  background-size: 40vmax;
+  background-size: contain;
   background-position: right center;
   height: 80vh;
   position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  #approach {
+    background-size: 45vmin;
+    background-position: bottom right;
+  }
 }
 
 #approach .container {

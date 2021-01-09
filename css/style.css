@@ -40,89 +40,133 @@ a :hover {
 
 .homzhub {
   background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.homzhub:hover {
-  background: linear-gradient(55deg, #64A2FF, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "a";
 }
 
 .law {
   background: linear-gradient(55deg, #5181D6, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.law:hover {
-  background: linear-gradient(55deg, #5181D6, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "b";
 }
 
 .motion {
   background: linear-gradient(55deg, #E2A851, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.motion:hover {
-  background: linear-gradient(55deg, #E2A851, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "c";
 }
 
 .duct {
   background: linear-gradient(55deg, #3FA887, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.duct:hover {
-  background: linear-gradient(55deg, #3FA887, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "d";
 }
 
 .shop {
   background: linear-gradient(55deg, #FF5757, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.shop:hover {
-  background: linear-gradient(55deg, #FF5757, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "e";
 }
 
 .white {
   background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.white:hover {
-  background: linear-gradient(55deg, #cccccc, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "f";
 }
 
 .e-com {
   background: linear-gradient(55deg, #DE4F4F, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.e-com:hover {
-  background: linear-gradient(55deg, #DE4F4F, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "g";
 }
 
 .soon {
   background: linear-gradient(55deg, black, 80%, rgba(255, 255, 255, 0.637) 170%);
-}
-
-.soon:hover {
-  background: linear-gradient(55deg, black, 30%, rgba(255, 255, 255, 0.2) 170%);
+  grid-area: "h";
 }
 
 #work .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  grid-auto-rows: 250px;
+  grid-gap: 0.7em;
+  grid-auto-rows: 300px;
+      grid-template-areas: "a b c" "a b d" "e e e";
+}
+
+#work .grid-container .homzhub {
+  background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+#work .grid-container .law {
+  background: linear-gradient(55deg, #5181D6, 80%, rgba(255, 255, 255, 0.637) 170%);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+#work .grid-container .motion {
+  background: linear-gradient(55deg, #E2A851, 80%, rgba(255, 255, 255, 0.637) 170%);
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: e;
+  min-height: 400px;
+  background-image: url(../img/landing/motion.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#work .grid-container .duct {
+  background: linear-gradient(55deg, #3FA887, 80%, rgba(255, 255, 255, 0.637) 170%);
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+#work .grid-container .shop {
+  background: linear-gradient(55deg, #FF5757, 80%, rgba(255, 255, 255, 0.637) 170%);
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d;
+}
+
+#work .grid-container .white {
+  background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
+  grid-area: f;
+}
+
+#work .grid-container .e-com {
+  background: linear-gradient(55deg, #DE4F4F, 80%, rgba(255, 255, 255, 0.637) 170%);
+  grid-area: g;
+}
+
+#work .grid-container .soon {
+  background: linear-gradient(55deg, black, 80%, rgba(255, 255, 255, 0.637) 170%);
+  grid-area: h;
 }
 
 @media screen and (min-width: 900px) {
   #work .grid-container {
     max-width: 1200px;
     margin: 0 auto;
-    -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 
 #work .grid-container div {
-  padding: 1em;
   position: relative;
   color: #fdfdfd;
+  border-radius: 0.3em;
+  background-size: cover;
+}
+
+#work .grid-container div img {
+  width: 100%;
+  height: 80%;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 #work .grid-container div:hover {
@@ -130,19 +174,17 @@ a :hover {
 }
 
 #work .grid-container div h4 {
-  font-size: 22px;
-  line-height: 24px;
-  position: absolute;
-  bottom: 0;
+  font-size: 18px;
+  line-height: 20px;
   left: 0;
-  padding: 18px;
+  padding: 7px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.07em;
 }
 
 #work .grid-container div h4 small {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 #work .grid-container div h4 small b {

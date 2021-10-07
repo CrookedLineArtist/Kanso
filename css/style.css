@@ -536,7 +536,7 @@ section {
   top: 0%;
   left: 0%;
   z-index: -1;
-  background: url(../img/bg.png) no-repeat;
+  background: url(../img/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -556,7 +556,7 @@ section {
   top: 0%;
   left: 00%;
   z-index: -1;
-  background: url(../img/bg.png) no-repeat;
+  background: url(../img/bg.jpg) no-repeat;
   background-size: cover;
   background-position: right;
 }
@@ -577,7 +577,7 @@ section {
   top: 0%;
   left: 0%;
   z-index: -1;
-  background: url(../img/bg.png) no-repeat;
+  background: url(../img/bg.jpg) no-repeat;
   background-size: cover;
   background-position: bottom;
   -webkit-transform: rotate(180deg);

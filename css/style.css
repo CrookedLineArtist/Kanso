@@ -81,7 +81,7 @@ a :hover {
 #work .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0.7em;
+  grid-gap: 1.5em;
   grid-auto-rows: 270px;
       grid-template-areas: "a b c" "a b d" "e e e";
 }
@@ -145,7 +145,8 @@ a :hover {
 
 @media screen and (max-width: 700px) {
   #work .grid-container {
-        grid-template-areas: "a b" "c d" "e e";
+        grid-template-areas: "a" "b" "c " "d" "e";
+    padding: 0 1.5em;
   }
 }
 
@@ -176,14 +177,15 @@ a :hover {
 }
 
 #work .grid-container div:hover {
-  color: #1c1c1c;
+  text-shadow: 0px 0px 15px #e6e6e6;
 }
 
 #work .grid-container div h4 {
   font-size: 18px;
   line-height: 20px;
+  margin: 0;
   left: 0;
-  padding: 7px;
+  padding: 1em;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.07em;

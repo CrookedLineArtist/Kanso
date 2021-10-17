@@ -39,43 +39,75 @@ a :hover {
 }
 
 .homzhub {
-  background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #64A2FF, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "a";
 }
 
+.homzhub:hover {
+  background: linear-gradient(55deg, #64A2FF, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .law {
-  background: linear-gradient(55deg, #5181D6, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #5181D6, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "b";
 }
 
+.law:hover {
+  background: linear-gradient(55deg, #5181D6, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .motion {
-  background: linear-gradient(55deg, #E2A851, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #E2A851, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "c";
 }
 
+.motion:hover {
+  background: linear-gradient(55deg, #E2A851, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .duct {
-  background: linear-gradient(55deg, #3FA887, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #3FA887, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "d";
 }
 
+.duct:hover {
+  background: linear-gradient(55deg, #3FA887, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .shop {
-  background: linear-gradient(55deg, #FF5757, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #FF5757, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "e";
 }
 
+.shop:hover {
+  background: linear-gradient(55deg, #FF5757, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .white {
-  background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #cccccc, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "f";
 }
 
+.white:hover {
+  background: linear-gradient(55deg, #cccccc, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .e-com {
-  background: linear-gradient(55deg, #DE4F4F, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #DE4F4F, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "g";
 }
 
+.e-com:hover {
+  background: linear-gradient(55deg, #DE4F4F, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 .soon {
-  background: linear-gradient(55deg, black, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, black, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: "h";
+}
+
+.soon:hover {
+  background: linear-gradient(55deg, black, 90%, rgba(255, 255, 255, 0.2) 170%);
 }
 
 #work .grid-container {
@@ -87,60 +119,92 @@ a :hover {
 }
 
 #work .grid-container .homzhub {
-  background: linear-gradient(55deg, #64A2FF, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #64A2FF, 95%, rgba(255, 255, 255, 0.637) 170%);
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: a;
 }
 
+#work .grid-container .homzhub:hover {
+  background: linear-gradient(55deg, #64A2FF, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .law {
-  background: linear-gradient(55deg, #5181D6, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #5181D6, 95%, rgba(255, 255, 255, 0.637) 170%);
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: b;
 }
 
+#work .grid-container .law:hover {
+  background: linear-gradient(55deg, #5181D6, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .motion {
-  background: linear-gradient(55deg, #E2A851, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #E2A851, 95%, rgba(255, 255, 255, 0.637) 170%);
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: e;
-  min-height: 400px;
+  min-height: 350px;
   background-image: url(../img/landing/motion.png);
   background-size: cover;
   background-position: center;
 }
 
+#work .grid-container .motion:hover {
+  background: linear-gradient(55deg, #E2A851, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .duct {
-  background: linear-gradient(55deg, #3FA887, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #3FA887, 95%, rgba(255, 255, 255, 0.637) 170%);
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: c;
 }
 
+#work .grid-container .duct:hover {
+  background: linear-gradient(55deg, #3FA887, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .shop {
-  background: linear-gradient(55deg, #FF5757, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #FF5757, 95%, rgba(255, 255, 255, 0.637) 170%);
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: d;
 }
 
+#work .grid-container .shop:hover {
+  background: linear-gradient(55deg, #FF5757, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .white {
-  background: linear-gradient(55deg, #cccccc, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #cccccc, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: f;
 }
 
+#work .grid-container .white:hover {
+  background: linear-gradient(55deg, #cccccc, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .e-com {
-  background: linear-gradient(55deg, #DE4F4F, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, #DE4F4F, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: g;
 }
 
+#work .grid-container .e-com:hover {
+  background: linear-gradient(55deg, #DE4F4F, 90%, rgba(255, 255, 255, 0.2) 170%);
+}
+
 #work .grid-container .soon {
-  background: linear-gradient(55deg, black, 80%, rgba(255, 255, 255, 0.637) 170%);
+  background: linear-gradient(55deg, black, 95%, rgba(255, 255, 255, 0.637) 170%);
   grid-area: h;
+}
+
+#work .grid-container .soon:hover {
+  background: linear-gradient(55deg, black, 90%, rgba(255, 255, 255, 0.2) 170%);
 }
 
 @media screen and (max-width: 700px) {
@@ -166,7 +230,7 @@ a :hover {
 
 #work .grid-container div img {
   max-width: 100%;
-  height: 85%;
+  height: 75%;
   -ms-flex-item-align: right;
       -ms-grid-row-align: right;
       align-self: right;
@@ -174,6 +238,12 @@ a :hover {
   bottom: 0;
   right: 0;
   overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  #work .grid-container div img {
+    height: 85%;
+  }
 }
 
 #work .grid-container div:hover {
@@ -193,6 +263,7 @@ a :hover {
 
 #work .grid-container div h4 small {
   font-weight: 300;
+  color: black;
 }
 
 #work .grid-container div h4 small b {
@@ -246,8 +317,6 @@ a :hover {
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
 }
 
 *[onclick] {
@@ -713,7 +782,7 @@ section {
   background-size: 800px;
   background-position: right;
   height: 90%;
-  width: 35%;
+  width: 20px;
   position: absolute;
   top: 0;
   right: 0;

@@ -1,6 +1,66 @@
 :root {
-    font-size: 16px;
+    font-size: 18px;
 }
+
+
+
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  position: relative;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 5em 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 1.7em;
+  padding-bottom: 2em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+h4 {
+  font-weight: 300;
+  margin-top: -20px;
+}
+h5{
+  font-weight: 200;
+  letter-spacing: 0.3em;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: rgb(78, 78, 78);
+  line-height: 1.4em;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+
+
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -25,3 +85,33 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
 }
+
+
+
+
+footer ul {
+  padding: 0;
+  margin: 1em 0;
+
+  list-style: none;
+
+  display: flex;
+}
+
+footer li>a {
+  color: rgb(87, 87, 87);
+  font-size: 1em;
+  text-decoration: none;
+
+  margin: 0em 2em 0em 0em;
+  cursor: pointer;
+}
+
+footer li>a:hover {
+  color: rgb(51, 51, 51);
+  text-decoration: underline;
+}
+
+
+
+

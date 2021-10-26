@@ -22,55 +22,6 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-      position: relative;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 5em 1em;
-    }
-
-    h2 {
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      font-size: 1.7em;
-      padding-bottom: 2em;
-    }
-
-    h3 {
-      font-weight: 500;
-      font-size: 1.4em;
-
-
-    }
-
-    h4 {
-      font-weight: 300;
-      margin-top: -20px;
-    }
-
-    p {
-      font-family: 'Rubik', sans-serif;
-      font-weight: 300;
-      color: rgb(78, 78, 78);
-      line-height: 1.4em;
-
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body>
@@ -179,8 +130,16 @@
 
 
 
-  <div class=" container">
-    <h2>Process</h2>
+  <div class=" container  "
+       style=" 
+              display: flex
+            ; flex-wrap: wrap
+
+       "
+  >
+    <h2
+        style="padding-right: 5em;"
+    >Process</h2>
     <div class="process">
 
       <div>
@@ -236,6 +195,8 @@
 
       position: relative;
       color: rgb(255, 255, 255);
+
+      transition: ease-in 400ms;
     }
 
 
@@ -255,20 +216,26 @@
       height: 12em;
       margin-top: 3em;
 
-      background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
+
+
       border-radius: 10px 10px 0px 0px;
-      border-right: rgb(236, 236, 236) 5px solid;
-      border-left: rgb(235, 235, 235) 5px solid;
-      border-top: rgb(216, 216, 216) 5px solid;
+      border-right: rgb(236, 236, 236) 7px solid;
+      border-left: rgb(235, 235, 235) 7px solid;
+      border-top: rgb(216, 216, 216) 7px solid;
       filter: drop-shadow(0px 0px 20px rgba(65, 65, 65, 0.37));
 
     }
 
-    .portfolio > :hover .portfolio-img  {
+    .portfolio> :hover .portfolio-img {
       transition: ease-out 300ms;
       height: 13em;
       margin-top: 2em;
+    }
+
+    .portfolio> :hover .portfolio-icon {
+      transform: scale(0.8);
+      transition: ease-out 300ms;
     }
   </style>
 
@@ -292,16 +259,13 @@
         <div style="background-color: #C1DDE8;">
           <h3>Homzhub</h3>
           <h4>Desktop App</h4>
-          <img 
-          style=" max-width: 30px; 
-                  padding: 1em;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-                  "
-                  
-
-          src="./img/portfolio/dribbble.png" alt="" srcset="">
+          <img class="portfolio-icon" style=" 
+                    height: 30px
+                  ; padding: 1em
+                  ; position: absolute
+                  ; right: 0
+                  ; top: 0
+                  ; " src="./img/portfolio/dribbble.png" alt="" srcset="">
           <div class="portfolio-img" style="background: url('./img/portfolio/Property details owner.jpeg')">
 
           </div>
@@ -406,36 +370,12 @@
   </div>
 
 
-  <style>
-    footer ul {
-      padding: 0;
-      margin: 1em 0;
-
-      list-style: none;
-
-      display: flex;
-    }
-
-    footer li>a {
-      color: rgb(87, 87, 87);
-      font-size: 1em;
-      text-decoration: none;
-
-      margin: 0em 2em 0em 0em;
-      cursor: pointer;
-    }
-
-    footer li>a:hover {
-      color: rgb(51, 51, 51);
-      text-decoration: underline;
-    }
-  </style>
 
   <!-- container properties except padding hence inline style mentioned -->
   <footer class="container" style="padding: 1em 1em;">
     <h3>Reach out to us</h3>
     <ul>
-      <li><a href="mailto:anaypatil@kansodesignworks.com">email </a> </li>
+      <li><a href="mailto:anaypatil@kansodesignworks.co">email </a> </li>
       <li><a href="tel:+91 90498 54352">call </a> </li>
       <li><a href="https://www.instagram.com/ui.kanso.dw/">instgram</a> </li>
       <li><a href="https://dribbble.com/kansodesignworks">dribbble</a> </li>

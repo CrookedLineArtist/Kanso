@@ -15,6 +15,7 @@ body {
   color: rgba(61, 61, 61, 0.945);
 
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {
@@ -59,6 +60,7 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
 
 
 

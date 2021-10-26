@@ -30,9 +30,10 @@
   <div style="background-image: url(./img/brandi-redd-aJTiW00qqtI-unsplash.jpeg);
 ">
 
-    <div class="container" style="padding: 15vmax 0;">
-      <div style="max-width: 250px;">
-        <img src="./img/kanso design works.png" alt="" srcset="" style="width: 100%; padding-left: 1em;">
+    <div class="container" style="padding: 14vmax 0;">
+      <div style=" text-align: left;">
+        <img src="./img/kanso design works.png" alt="" srcset="" 
+        style="width: 300px; padding-left: 1em;">
       </div>
     </div>
   </div>
@@ -52,22 +53,26 @@
   <style>
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 3rem;
     }
 
     .services>div {
 
       display: grid;
-      grid-template-rows: 0.5fr 1fr;
+      grid-template-rows: 0.3fr 1fr;
     }
 
     .services>div>div {
-      display: block;
+      align-self: baseline;
     }
 
     .services p {
-      max-width: 30ch;
+      max-width: 40ch;
+    }
+    .services img{
+      
+      align-self: end;
     }
   </style>
   <div class="container">
@@ -192,10 +197,8 @@
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 
       grid-gap: 0.5rem;
-
+      color: ghostwhite;
       position: relative;
-      color: rgb(255, 255, 255);
-
       transition: ease-in 400ms;
     }
 
@@ -214,15 +217,13 @@
 
     .portfolio-img {
       height: 12em;
+      width: 100%;
       margin-top: 3em;
-
-      background-size: cover;
-
-
-      border-radius: 10px 10px 0px 0px;
-      border-right: rgb(236, 236, 236) 7px solid;
-      border-left: rgb(235, 235, 235) 7px solid;
-      border-top: rgb(216, 216, 216) 7px solid;
+      background-size: cover !important;
+      border-radius: 15px 15px 0px 0px;
+      border-right: rgb(27, 27, 27) 7px solid;
+      border-left: rgb(53, 53, 53) 7px solid;
+      border-top: rgb(71, 71, 71) 7px solid;
       filter: drop-shadow(0px 0px 20px rgba(65, 65, 65, 0.37));
 
     }
@@ -242,15 +243,38 @@
   <div class="container ">
     <h2>portfolio</h2>
     <div class="portfolio">
-      <a href="https://www.greenchoicenow.com/">
-        <div style="
-                    background: url(./img/portfolio/green-choice.jpeg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 250px;">
+      
+      
+      <a href="" target="_blank" rel="noopener noreferrer">
+
+        <div style="background-color: #F0F7F5;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    align-items: stretch
+        ">
+          <div style="padding: 1em;
+                      max-width: 500px;
+                        ">
+            <img
+             style="max-width: 100px; padding-top: 2em;"
+             src="./img/portfolio/green-choise/logo.png" alt="">
+            <h3 style="color:initial">Carbon-neutral grocery shopping space helping people to make healthier and sustainable food choices.</h3>
+            <br>
+            <hr>
+            <p>www.greenchoicenow.com
+              <br>
+              <strong style="color:#078489">Google pays best of 2020 in the essentials category</strong></p>
+
+          </div>
+
+          <img 
+          style="max-width: 250px; text-align: center;"
+          src="./img/portfolio/green-choise/app.png" alt="" srcset="">
 
         </div>
+        <p style="color: initial; margin-top: 0px;"><small> CASE STUDY COMMING SOON...</small></p> 
+        
       </a>
     </div>
 
@@ -259,13 +283,13 @@
         <div style="background-color: #C1DDE8;">
           <h3>Homzhub</h3>
           <h4>Desktop App</h4>
-          <img class="portfolio-icon" style=" 
+          <!-- <img class="portfolio-icon" style=" 
                     height: 30px
                   ; padding: 1em
                   ; position: absolute
                   ; right: 0
                   ; top: 0
-                  ; " src="./img/portfolio/dribbble.png" alt="" srcset="">
+                  ; " src="./img/portfolio/dribbble.png" alt="" srcset=""> -->
           <div class="portfolio-img" style="background: url('./img/portfolio/Property details owner.jpeg')">
 
           </div>
@@ -276,7 +300,7 @@
         <div style="background-color: #A597FB;">
           <h3>Riverus Law Analytics</h3>
           <h4>Desktop App</h4>
-          <div class="portfolio-img" style="background: url('./img/portfolio/Analytics\ for\ judge.jpeg') ">
+          <div class="portfolio-img" style="background:  url('./img/portfolio/Analytics\ for\ judge.jpeg')">
 
           </div>
         </div>
@@ -286,7 +310,7 @@
         <div style="background-color: #95D6C1;">
           <h3>Duct Test Application </h3>
           <h4>Redesign Tablet App</h4>
-          <div class="portfolio-img" style="background: url('./img/portfolio/duct\ application.jpeg')">
+          <div class="portfolio-img" style="background-image: url('./img/duct-test-application/app.jpeg')">
 
           </div>
         </div>
@@ -372,7 +396,7 @@
 
 
   <!-- container properties except padding hence inline style mentioned -->
-  <footer class="container" style="padding: 1em 1em;">
+  <footer class="container">
     <h3>Reach out to us</h3>
     <ul>
       <li><a href="mailto:anaypatil@kansodesignworks.co">email </a> </li>

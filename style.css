@@ -1,5 +1,5 @@
 :root {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  color: rgba(61, 61, 61, 0.945);
+
   position: relative;
 }
 
@@ -41,6 +43,7 @@ h4 {
 h5{
   font-weight: 200;
   letter-spacing: 0.3em;
+  color:#F52D01;
 }
 
 p {
@@ -87,7 +90,9 @@ a {
 }
 
 
-
+footer{
+  padding: 3em 1em !important;
+}
 
 footer ul {
   padding: 0;

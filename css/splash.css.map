@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/splash.scss"
+    ],
+    "names": [],
+    "file": "splash.css"
+}

@@ -905,4 +905,75 @@ section {
 .green-choice img {
   width: 100%;
 }
+
+
+.portfolio {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 0.5rem;
+  
+  position: relative;
+  transition: ease-in 400ms;
+}
+
+
+.portfolio a>div {
+  padding: 0 1.5em;
+  padding-top: 0.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio h3+h4 {
+  text-transform: uppercase;
+}
+
+.portfolio-img {
+  height: 14em;
+  
+  margin-top: 3em;
+  background-size: cover !important;
+  border-radius: 15px 15px 0px 0px;
+  border-right: rgb(27, 27, 27) 7px solid;
+  border-left: rgb(53, 53, 53) 7px solid;
+  border-top: rgb(71, 71, 71) 7px solid;
+  filter: drop-shadow(0px 0px 20px rgba(65, 65, 65, 0.37));
+
+}
+
+.portfolio> :hover .portfolio-img {
+  transition: ease-out 300ms;
+  height: 15em;
+  margin-top: 2em;
+}
+
+.portfolio> :hover .portfolio-icon {
+  transform: scale(0.8);
+  transition: ease-out 300ms;
+}
+
+.portfolio h4{
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.portfolio h5{
+  margin-top: -5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  
+}
+.portfolio a{
+  text-decoration: none;
+}
+.portfolio a :hover{
+  color: black !important;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */

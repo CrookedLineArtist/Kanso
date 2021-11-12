@@ -655,9 +655,7 @@ section {
   transform: rotate(180deg);
 }
 
-#process h5 {
 
-}
 
 .process-icon {
   width: 100px;
@@ -915,6 +913,15 @@ section {
   
   position: relative;
   transition: ease-in 400ms;
+}
+
+@media screen and (max-width: 500px){
+  .portfolio{
+    grid-template-columns: 1fr;
+  }
+  .portfolio-img {
+    height: 10em;
+  }
 }
 
 

@@ -339,7 +339,7 @@ p {
   max-width: 500px;
   line-height: 160.6%;
   margin-bottom: 1.5em;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin-top: 20px;
 }
@@ -384,7 +384,7 @@ h4 small {
 
 h5 {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   margin-top: 16px;
   margin-bottom: 2px;
@@ -393,7 +393,7 @@ h5 {
 
 @media screen and (max-width: 900px) {
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -406,7 +406,7 @@ section {
 
 @media screen and (max-width: 700px) {
   section .container {
-    padding: 10vmax;
+    padding: 10vmin;
   }
 }
 
@@ -656,11 +656,11 @@ section {
 }
 
 #process h5 {
-  max-width: 300px;
+
 }
 
 .process-icon {
-  width: 150px;
+  width: 100px;
 }
 
 #approach {
